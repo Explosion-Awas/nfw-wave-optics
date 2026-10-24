@@ -1,0 +1,427 @@
+{
+  "source_revision": "cqg_v2 with frozen cut_v1 science",
+  "copy_policy": "Explicit allowlist; no credentials, environments, external source trees, literature full text or internal editing logs.",
+  "files": [
+    {
+      "source_relative_path": "src/nfw_wave/__init__.py",
+      "public_path": "src/nfw_wave/__init__.py",
+      "source_sha256": "05bdeef5b572448ddcee215709bf41a9d3f691cf921f34f25099cee8f9465dcc",
+      "public_sha256": "05bdeef5b572448ddcee215709bf41a9d3f691cf921f34f25099cee8f9465dcc",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/approximations.py",
+      "public_path": "src/nfw_wave/approximations.py",
+      "source_sha256": "dc7a86b43139c7da38559a9783eb08caed6cbd5cd24b0ad20323e1ff44119aac",
+      "public_sha256": "dc7a86b43139c7da38559a9783eb08caed6cbd5cd24b0ad20323e1ff44119aac",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/band_hybrid.py",
+      "public_path": "src/nfw_wave/band_hybrid.py",
+      "source_sha256": "541ffcf7fa09ef74b15f816507b77ed6854defef54dc3ddd89d0273c023509bb",
+      "public_sha256": "541ffcf7fa09ef74b15f816507b77ed6854defef54dc3ddd89d0273c023509bb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/hybrid.py",
+      "public_path": "src/nfw_wave/hybrid.py",
+      "source_sha256": "d9904a1188457c8f6b6e695035c2e08e463cf58c9f46c37bf2054c549ba6471b",
+      "public_sha256": "d9904a1188457c8f6b6e695035c2e08e463cf58c9f46c37bf2054c549ba6471b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/image_expansion.py",
+      "public_path": "src/nfw_wave/image_expansion.py",
+      "source_sha256": "a7afde9a700792eb69bfd848a9faedc4fbd73d9a3e8aaff78c624b510acdf055",
+      "public_sha256": "a7afde9a700792eb69bfd848a9faedc4fbd73d9a3e8aaff78c624b510acdf055",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/lens.py",
+      "public_path": "src/nfw_wave/lens.py",
+      "source_sha256": "e4a7c626d04831913e8f8191ff81b97fcdb7265cb7ba7cee489e813d5a89beb4",
+      "public_sha256": "e4a7c626d04831913e8f8191ff81b97fcdb7265cb7ba7cee489e813d5a89beb4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/metrics.py",
+      "public_path": "src/nfw_wave/metrics.py",
+      "source_sha256": "f781a2770e876251ac1b4311df8b670e23e02d2b03077fe18cf8636f48eb18e8",
+      "public_sha256": "f781a2770e876251ac1b4311df8b670e23e02d2b03077fe18cf8636f48eb18e8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/published_baseline.py",
+      "public_path": "src/nfw_wave/published_baseline.py",
+      "source_sha256": "c62f42a54b5fe76e93ce673106289cc8cb4e2af5d1bdb682f9e330ed0b728056",
+      "public_sha256": "c62f42a54b5fe76e93ce673106289cc8cb4e2af5d1bdb682f9e330ed0b728056",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "src/nfw_wave/reference.py",
+      "public_path": "src/nfw_wave/reference.py",
+      "source_sha256": "454f4f21eb99f0daae6d9fac493cfe7a49f404f4566cdf1cc249a01a1fcf18ac",
+      "public_sha256": "454f4f21eb99f0daae6d9fac493cfe7a49f404f4566cdf1cc249a01a1fcf18ac",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/__init__.py",
+      "public_path": "phase2/src/nfw_advanced/__init__.py",
+      "source_sha256": "93a185b559c044dc04fc3b37e4fc5fcb38763994938a45461507bc3a74d4bd6f",
+      "public_sha256": "93a185b559c044dc04fc3b37e4fc5fcb38763994938a45461507bc3a74d4bd6f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/batch_cut.py",
+      "public_path": "phase2/src/nfw_advanced/batch_cut.py",
+      "source_sha256": "c8660fb1baed2e6290d75de4f46c239b2233f68622a6abaf4558511e1ec9b0b2",
+      "public_sha256": "c8660fb1baed2e6290d75de4f46c239b2233f68622a6abaf4558511e1ec9b0b2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/born.py",
+      "public_path": "phase2/src/nfw_advanced/born.py",
+      "source_sha256": "36a1583a06e2e0b8c3e3288cc837154b012fc49132619ce32035aa021609a62d",
+      "public_sha256": "36a1583a06e2e0b8c3e3288cc837154b012fc49132619ce32035aa021609a62d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/controlled_cut.py",
+      "public_path": "phase2/src/nfw_advanced/controlled_cut.py",
+      "source_sha256": "a1a29f3eb0c2c7bd1a5dcb104688dda96965b9c87eab49f6e2826c56c1d7233d",
+      "public_sha256": "a1a29f3eb0c2c7bd1a5dcb104688dda96965b9c87eab49f6e2826c56c1d7233d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/cut_solver.py",
+      "public_path": "phase2/src/nfw_advanced/cut_solver.py",
+      "source_sha256": "20d81b39d2ec816bc7bc5dd951d82dd10b951c61e4a5b5e2c6a876c7da078d20",
+      "public_sha256": "20d81b39d2ec816bc7bc5dd951d82dd10b951c61e4a5b5e2c6a876c7da078d20",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/hierarchy.py",
+      "public_path": "phase2/src/nfw_advanced/hierarchy.py",
+      "source_sha256": "f7859afe0a69f85359efc1408443032d5ab244b1c9d2f093d6eb3bc70f8bf157",
+      "public_sha256": "f7859afe0a69f85359efc1408443032d5ab244b1c9d2f093d6eb3bc70f8bf157",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/reference_stable.py",
+      "public_path": "phase2/src/nfw_advanced/reference_stable.py",
+      "source_sha256": "c2576f7a49c78a4eeeedcf83c03619fc6cbcb96a3863ded433fbc123888ff9a3",
+      "public_sha256": "c2576f7a49c78a4eeeedcf83c03619fc6cbcb96a3863ded433fbc123888ff9a3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/src/nfw_advanced/spatial.py",
+      "public_path": "phase2/src/nfw_advanced/spatial.py",
+      "source_sha256": "cc2570630e302deeeb2a782661ecc561a44e55ea5818a618bb0970fffd4e0beb",
+      "public_sha256": "cc2570630e302deeeb2a782661ecc561a44e55ea5818a618bb0970fffd4e0beb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/__init__.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/__init__.py",
+      "source_sha256": "93a185b559c044dc04fc3b37e4fc5fcb38763994938a45461507bc3a74d4bd6f",
+      "public_sha256": "93a185b559c044dc04fc3b37e4fc5fcb38763994938a45461507bc3a74d4bd6f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/batch_cut.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/batch_cut.py",
+      "source_sha256": "c8660fb1baed2e6290d75de4f46c239b2233f68622a6abaf4558511e1ec9b0b2",
+      "public_sha256": "c8660fb1baed2e6290d75de4f46c239b2233f68622a6abaf4558511e1ec9b0b2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/born.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/born.py",
+      "source_sha256": "598bb093ff22fca4bee03a6b8d7a87e0927f02f0de34f49af718e0e840bb372d",
+      "public_sha256": "598bb093ff22fca4bee03a6b8d7a87e0927f02f0de34f49af718e0e840bb372d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/controlled_cut.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/controlled_cut.py",
+      "source_sha256": "a1a29f3eb0c2c7bd1a5dcb104688dda96965b9c87eab49f6e2826c56c1d7233d",
+      "public_sha256": "a1a29f3eb0c2c7bd1a5dcb104688dda96965b9c87eab49f6e2826c56c1d7233d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/cut_solver.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/cut_solver.py",
+      "source_sha256": "20d81b39d2ec816bc7bc5dd951d82dd10b951c61e4a5b5e2c6a876c7da078d20",
+      "public_sha256": "20d81b39d2ec816bc7bc5dd951d82dd10b951c61e4a5b5e2c6a876c7da078d20",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/hierarchy.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/hierarchy.py",
+      "source_sha256": "f7859afe0a69f85359efc1408443032d5ab244b1c9d2f093d6eb3bc70f8bf157",
+      "public_sha256": "f7859afe0a69f85359efc1408443032d5ab244b1c9d2f093d6eb3bc70f8bf157",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/reference_stable.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/reference_stable.py",
+      "source_sha256": "c2576f7a49c78a4eeeedcf83c03619fc6cbcb96a3863ded433fbc123888ff9a3",
+      "public_sha256": "c2576f7a49c78a4eeeedcf83c03619fc6cbcb96a3863ded433fbc123888ff9a3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/nfw_frozen_cut/spatial.py",
+      "public_path": "phase2/frozen/cut_v1/nfw_frozen_cut/spatial.py",
+      "source_sha256": "cc2570630e302deeeb2a782661ecc561a44e55ea5818a618bb0970fffd4e0beb",
+      "public_sha256": "cc2570630e302deeeb2a782661ecc561a44e55ea5818a618bb0970fffd4e0beb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/cut_v1/manifest.json",
+      "public_path": "phase2/frozen/cut_v1/manifest.json",
+      "source_sha256": "e53516c9b0e3fe5019b0a9f3a1b4027e63533d66ba5063262d7ebd78c2c7b92d",
+      "public_sha256": "e53516c9b0e3fe5019b0a9f3a1b4027e63533d66ba5063262d7ebd78c2c7b92d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/baseline_v1/manifest.json",
+      "public_path": "phase2/frozen/baseline_v1/manifest.json",
+      "source_sha256": "0999f97e38af69fd4bba6d86051537c740ad94f2eaea2fbc08b72420f61604c6",
+      "public_sha256": "0999f97e38af69fd4bba6d86051537c740ad94f2eaea2fbc08b72420f61604c6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/frozen/baseline_v1/nfw_frozen_born.py",
+      "public_path": "phase2/frozen/baseline_v1/nfw_frozen_born.py",
+      "source_sha256": "36a1583a06e2e0b8c3e3288cc837154b012fc49132619ce32035aa021609a62d",
+      "public_sha256": "36a1583a06e2e0b8c3e3288cc837154b012fc49132619ce32035aa021609a62d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_approximations.py",
+      "public_path": "tests/test_approximations.py",
+      "source_sha256": "bdef3e3c1a931c37dd4133fc8cb174f0ea414fed15b55141ec4a52db0dddf8b3",
+      "public_sha256": "bdef3e3c1a931c37dd4133fc8cb174f0ea414fed15b55141ec4a52db0dddf8b3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_band_hybrid.py",
+      "public_path": "tests/test_band_hybrid.py",
+      "source_sha256": "68aaebd7bdf4f93285898fa5bc426389cbc1dec29eb2b5192c47435846589e0f",
+      "public_sha256": "68aaebd7bdf4f93285898fa5bc426389cbc1dec29eb2b5192c47435846589e0f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_hybrid.py",
+      "public_path": "tests/test_hybrid.py",
+      "source_sha256": "1526e45d5597b52cf72c1b87f7b652a7676ff1bbdf3a54f959b16f93c225e3ab",
+      "public_sha256": "1526e45d5597b52cf72c1b87f7b652a7676ff1bbdf3a54f959b16f93c225e3ab",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_image_expansion.py",
+      "public_path": "tests/test_image_expansion.py",
+      "source_sha256": "ec04690535af28af0f471969309db961e1b1ef4c97a550e80c447e19bbfeb8c3",
+      "public_sha256": "ec04690535af28af0f471969309db961e1b1ef4c97a550e80c447e19bbfeb8c3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_lens.py",
+      "public_path": "tests/test_lens.py",
+      "source_sha256": "f5793c9b07eadeac2e6983c1ad8547d600b8c4e1787b05141c124b0bb625effe",
+      "public_sha256": "f5793c9b07eadeac2e6983c1ad8547d600b8c4e1787b05141c124b0bb625effe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_metrics.py",
+      "public_path": "tests/test_metrics.py",
+      "source_sha256": "9365eb3018247f9c9cb297cb178f24940df50d289745106a212892eb48969f22",
+      "public_sha256": "9365eb3018247f9c9cb297cb178f24940df50d289745106a212892eb48969f22",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_published_baseline.py",
+      "public_path": "tests/test_published_baseline.py",
+      "source_sha256": "1d1e1326f9b33e2b171d69608604df3a16ee3d0068f2ef521b762ef72c0ff072",
+      "public_sha256": "1d1e1326f9b33e2b171d69608604df3a16ee3d0068f2ef521b762ef72c0ff072",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "tests/test_reference.py",
+      "public_path": "tests/test_reference.py",
+      "source_sha256": "3c9f2f5a78597f2d0ef6393fbe26ece8d2564b5cb28891a27b02ccc156db47c9",
+      "public_sha256": "3c9f2f5a78597f2d0ef6393fbe26ece8d2564b5cb28891a27b02ccc156db47c9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_batch_cut.py",
+      "public_path": "phase2/tests/test_batch_cut.py",
+      "source_sha256": "e909897b05aa799445c4d01f74ca4a664da5d5defe1e6d6932dd33edbb99c275",
+      "public_sha256": "e909897b05aa799445c4d01f74ca4a664da5d5defe1e6d6932dd33edbb99c275",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_born.py",
+      "public_path": "phase2/tests/test_born.py",
+      "source_sha256": "66329e03e11722fb80b27f2f59fce12b866e5ba4833600cb9b6445f63a5b9c51",
+      "public_sha256": "66329e03e11722fb80b27f2f59fce12b866e5ba4833600cb9b6445f63a5b9c51",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_born_large_offset.py",
+      "public_path": "phase2/tests/test_born_large_offset.py",
+      "source_sha256": "0610cf1c1cb0801407ced03989bed696387f301b59346c89d01a0f7227a8565a",
+      "public_sha256": "0610cf1c1cb0801407ced03989bed696387f301b59346c89d01a0f7227a8565a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_controlled_cut.py",
+      "public_path": "phase2/tests/test_controlled_cut.py",
+      "source_sha256": "ad9a9c0fa0658e5d555953f31c9023ee8672c9ff386ad8c198a24c1b4b462ed8",
+      "public_sha256": "ad9a9c0fa0658e5d555953f31c9023ee8672c9ff386ad8c198a24c1b4b462ed8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_cut_solver.py",
+      "public_path": "phase2/tests/test_cut_solver.py",
+      "source_sha256": "601001ca9f3a9b8aa90b14470bcbfb954fc3612ec218b1e4b18180f3ddb27f2a",
+      "public_sha256": "601001ca9f3a9b8aa90b14470bcbfb954fc3612ec218b1e4b18180f3ddb27f2a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_hierarchy.py",
+      "public_path": "phase2/tests/test_hierarchy.py",
+      "source_sha256": "d4afc74f1e222ef8f94dca10f0c0fbf3bf129a4ed03dbf07fe3f4f180921af35",
+      "public_sha256": "d4afc74f1e222ef8f94dca10f0c0fbf3bf129a4ed03dbf07fe3f4f180921af35",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_reference_stable.py",
+      "public_path": "phase2/tests/test_reference_stable.py",
+      "source_sha256": "9731af1b7c3c519c0f97d9762703a8281c82edbc5451dd6c55fd92db5116ae4e",
+      "public_sha256": "9731af1b7c3c519c0f97d9762703a8281c82edbc5451dd6c55fd92db5116ae4e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/tests/test_spatial.py",
+      "public_path": "phase2/tests/test_spatial.py",
+      "source_sha256": "6e7ccd01ea1738fddc6c709aa83ffc625fe85c32290ad0f74dc4c37536472ec9",
+      "public_sha256": "6e7ccd01ea1738fddc6c709aa83ffc625fe85c32290ad0f74dc4c37536472ec9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/results/frozen_cut_v1/points.jsonl",
+      "public_path": "data/frozen/points.jsonl.gz",
+      "source_sha256": "fd5f6136a5eb119843f2f07c5944bea9e9a44a04b94c7f793cfeb5c1c037bc57",
+      "public_sha256": "d39304d87cee4325678b7eed2f4a6e93e1e99cbc7ef028385a8cb0fd8f5c37da",
+      "transformation": "deterministic gzip, decompressed bytes unchanged"
+    },
+    {
+      "source_relative_path": "phase2/results/frozen_cut_v1/bands_012.jsonl",
+      "public_path": "data/frozen/bands_012.jsonl.gz",
+      "source_sha256": "6c2145d6ceaac9fe8f6415d4a8856de4a6134611074fb9e5d443d35661ce065c",
+      "public_sha256": "229bdaacc2778240503ed1f161604cb44185c4a42e16e3057e4973459e9dbcc8",
+      "transformation": "deterministic gzip, decompressed bytes unchanged"
+    },
+    {
+      "source_relative_path": "phase2/results/frozen_cut_v1/bands_345.jsonl",
+      "public_path": "data/frozen/bands_345.jsonl.gz",
+      "source_sha256": "54609c0f3d2fb45cc1859601ad25b5ee1ed8be467b31221d8fa7a738de11781d",
+      "public_sha256": "53d12dd1f1250a80dbef9e58836c0bdded8243cda6ff66e07e47a64e9d91eb66",
+      "transformation": "deterministic gzip, decompressed bytes unchanged"
+    },
+    {
+      "source_relative_path": "phase2/results/frozen_cut_v1/design.json",
+      "public_path": "data/frozen/design.json",
+      "source_sha256": "fedffd06bd6001c148afe5a181fd2fb12008b1cf84f795a9a5b735cf2c8919e9",
+      "public_sha256": "fedffd06bd6001c148afe5a181fd2fb12008b1cf84f795a9a5b735cf2c8919e9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/revisions/cqg_v1/baselines/common_cases.jsonl",
+      "public_path": "data/baselines/common_cases.jsonl.gz",
+      "source_sha256": "301237177c5bd3f3534b202f939ad1e3499bd162c70ee710de08e60189984fd9",
+      "public_sha256": "8b62b6a1fe4545c6652ed040b70e2716ab6f9f2404ffad4d7539b8efcf8cb950",
+      "transformation": "deterministic gzip, decompressed bytes unchanged"
+    },
+    {
+      "source_relative_path": "phase2/revisions/cqg_v1/baselines/case_metrics.csv",
+      "public_path": "data/baselines/case_metrics.csv.gz",
+      "source_sha256": "d449aec21c004280178131ea86db3a4dd7eca0c52fb2fc8cd4dda28acc8a5cd0",
+      "public_sha256": "02e37c10e76b53269454acc57b661565092cb15d00f2b537158bbbb36470483d",
+      "transformation": "deterministic gzip, decompressed bytes unchanged"
+    },
+    {
+      "source_relative_path": "phase2/revisions/cqg_v1/baselines/summary.json",
+      "public_path": "data/baselines/summary.json",
+      "source_sha256": "324a2d7443e1c20255fbac0c55cd4a891bddbf68c1bf92fab3abcdff066e3052",
+      "public_sha256": "e0eb7677f25ca50f9da36947c766fdc4749d046b1e4aa150b134db5ebc6c1461",
+      "transformation": "Anonymize environment.executable as ${VIRTUAL_ENV}/python; other decoded fields unchanged"
+    },
+    {
+      "source_relative_path": "phase2/revisions/cqg_v1/baselines/point_metrics.csv",
+      "public_path": "data/baselines/point_metrics.csv",
+      "source_sha256": "5d26345b0bad41a499fc52447adaee7a2cd21d11f7c7bc3434a8033b4f871c08",
+      "public_sha256": "5d26345b0bad41a499fc52447adaee7a2cd21d11f7c7bc3434a8033b4f871c08",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/revisions/cqg_v1/baselines/band_metrics.csv",
+      "public_path": "data/baselines/band_metrics.csv",
+      "source_sha256": "5ddb4002ae87d57dd62b3536ed5e528e30e93883a169dd35a92f8f60cc231f0f",
+      "public_sha256": "5ddb4002ae87d57dd62b3536ed5e528e30e93883a169dd35a92f8f60cc231f0f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/revisions/cqg_v1/baselines/band_parameters.csv",
+      "public_path": "data/baselines/band_parameters.csv",
+      "source_sha256": "7d035477d4683543379e6d600ee452c3c70443e712c811093201825ba1d7698d",
+      "public_sha256": "7d035477d4683543379e6d600ee452c3c70443e712c811093201825ba1d7698d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/revisions/cqg_v1/baselines/coefficient_audit.csv",
+      "public_path": "data/baselines/coefficient_audit.csv",
+      "source_sha256": "a9db34e83a6ad5dfeb648d9aebacbd891ed7e21694e5480615c655cdff4658d0",
+      "public_sha256": "a9db34e83a6ad5dfeb648d9aebacbd891ed7e21694e5480615c655cdff4658d0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/experiments/cold_confirmation_v1/analysis.json",
+      "public_path": "data/timing/cold_confirmation.json",
+      "source_sha256": "09fcc932169ceadf9292ddffeeaaf9f403aed64b6b778963390882a844eb311d",
+      "public_sha256": "09fcc932169ceadf9292ddffeeaaf9f403aed64b6b778963390882a844eb311d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/reports/final_assets/paired_cold_observations.csv",
+      "public_path": "data/timing/paired_cold_observations.csv",
+      "source_sha256": "f9edd473082cd237978991b72c4f1aa63dd01970c64dc9d3d273851819e859b9",
+      "public_sha256": "f9edd473082cd237978991b72c4f1aa63dd01970c64dc9d3d273851819e859b9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/reports/final_assets/paired_cold_costs.png",
+      "public_path": "docs/paired_cold_costs.png",
+      "source_sha256": "4f01ee733477fbc2000236778395d120e63401476df116fdeef75d6880a80a74",
+      "public_sha256": "4f01ee733477fbc2000236778395d120e63401476df116fdeef75d6880a80a74",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/experiments/glow_tail_audit/analysis.json",
+      "public_path": "data/timing/glow_tail_audit_analysis.json",
+      "source_sha256": "f4566846ca67b0be6bcd0a8a524263857cebf56c36b28349fe0030a3cf6f86be",
+      "public_sha256": "f4566846ca67b0be6bcd0a8a524263857cebf56c36b28349fe0030a3cf6f86be",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "source_relative_path": "phase2/experiments/cold_fast_glow/analysis.json",
+      "public_path": "data/timing/cold_fast_glow_analysis.json",
+      "source_sha256": "b625966a00dae768633f3208d156deb6f4b31de231f8ac31918d06dd898d1f8e",
+      "public_sha256": "cb3e42be2ded9ff2970439517ebb4d0215de7fbb4fcb687e52ca5f980dc8c649",
+      "transformation": "Replace private Linux home prefix with ${HOME}; all numeric/boolean values unchanged",
+      "home_path_replacements": 112
+    }
+  ]
+}

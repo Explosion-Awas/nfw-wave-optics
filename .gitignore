@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+.env
+.env.*
+*.pem
+*.key
+paper/typeset/pdf_review/
+paper/typeset/first_screen.png

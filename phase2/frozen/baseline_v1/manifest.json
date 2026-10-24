@@ -1,0 +1,9 @@
+{
+  "baseline_id": "phase_resummed_born_stable_v1",
+  "source_sha256": "36a1583a06e2e0b8c3e3288cc837154b012fc49132619ce32035aa021609a62d",
+  "source": "src/nfw_advanced/born.py",
+  "freeze_time": "2026-10-21T10:44:51.424986+08:00",
+  "change_from_initial_cut_snapshot": "complete free/Hankel square algebraically, no Born-order or phase-gauge change",
+  "tests": "43 passed, including independent quadratic Gaussian at y=10000; original expanded phase failed by 3.0116641840465385e-6 in its unit coefficient",
+  "comparison_phase": "minimum: exact transport of source-centered truncation, no fitted phase"
+}

@@ -1,0 +1,1302 @@
+[
+  {
+    "tex": "\n\\psi(z)=2\\kappa_s\\left[\\operatorname{Log}^2(z/2)+\\arccos^2(1/z)\\right],\\qquad\\psi(0)=0.\n\\tag{1}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nF_+(w,y;\\kappa_s)=\\frac{w}{2\\pi i}\\int_{\\mathbb R^2}\n e^{iw[|\\boldsymbol x-\\boldsymbol y|^2/2-\\psi(x)-t_m]}\\,d^2\\boldsymbol x,\n\\quad w>0,\\quad q=wy>0,\n\\tag{2}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nr_m-\\psi'(r_m)=y,\\qquad\n\\lambda_r=1-\\psi''(r_m),\\quad\\lambda_t=y/r_m,\\qquad\nA=(\\lambda_r\\lambda_t)^{-1/2}.\n\\tag{3}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nh(t)=\\log\\frac{1+\\sqrt{1+t^2}}{2},\\qquad\n a(t)=2\\kappa_s h(t)[2\\log(t/2)-h(t)],\\qquad\n b(t)=2\\pi\\kappa_s h(t).\n\\tag{4}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n\\mathcal C=\\frac{2w}{\\pi}\\int_0^\\infty tK_0(qt)\n e^{-iw[t^2/2+a(t)]}\\sinh[wb(t)]\\,dt,\n\\tag{5}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nT_r=\\frac{w}{\\pi}\\int_r^\\infty tK_0(qt)\n e^{-iw[t^2/2+a(t)]-wb(t)}\\,dt.\n\\tag{6}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nI_{\\Gamma_r}=-\\frac{iw}{2}e^{iw\\tau_c}\\int_{\\Gamma_r}\n zH_0^{(2)}(qz)e^{iw[z^2/2-\\psi(z)]}\\,dz,\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nF=I_{\\Gamma_r}+e^{iw\\tau_c}(\\mathcal C+T_r).\n\\tag{7}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nI_{L_r}-I_{\\Gamma_r}=e^{iw\\tau_c}T_r,\n\\qquad\nF=I_{L_r}+e^{iw\\tau_c}\\mathcal C.\n\\tag{8}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nI_{L_r}=-\\frac{iw}{2}\\int_{L_r}zH_0^{(2),e}(qz)\n e^{iw[(z-y)^2/2-\\psi(z)-t_m]}\\,dz.\n\\tag{9}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nI_1=A(1+ic_1/w),\\qquad I_2=A(1+ic_1/w+c_2/w^2),\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nc_1=\\frac{p_4}{8\\lambda_r^2}+\\frac{5p_3^2}{24\\lambda_r^3}\n +\\frac{p_3}{4r_m\\lambda_r^2}\n +\\frac{\\lambda_r-\\lambda_t}{8r_m^2\\lambda_r\\lambda_t}.\n\\tag{10}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nC_2=\\frac{4\\kappa_s}{w^2y^4},\\qquad\nC_3=\\frac{32i\\kappa_s}{w^3y^6}\n \\left[-1+2\\kappa_s\\left(\\log q+\\gamma_E-\\frac32\\right)\\right].\n\\tag{11}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nr_*=\\frac{\\sqrt2}{wy},\\qquad\n f(q)=\\frac{\\psi(r_*)-\\psi(0)}{r_*},\\qquad\n C_W=\\frac{f(q)}{wy^3}\n     =\\frac{\\psi(\\sqrt2/q)-\\psi(0)}{\\sqrt2\\,y^2}.\n\\tag{12}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nM_+=\\max_j\\bigl(|F_j-F_j^{\\rm ref}|+\\sigma_j\\bigr),\\qquad\n\\rho_+=\\frac{\\|F-F^{\\rm ref}\\|+\\|\\sigma\\|}\n                 {\\|F^{\\rm ref}-A\\|-\\|\\sigma\\|},\n\\quad\\|g\\|^2=\\int|g|^2d\\log w.\n\\tag{13}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n\\Sigma_{\\rm cr}=\\frac{c^2D_S}{4\\pi G D_LD_{LS}},\\qquad\n\\kappa_s=\\frac{\\rho_s r_s}{\\Sigma_{\\rm cr}},\\qquad\ny=\\frac{D_L\\beta}{r_s},\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nt_s=\\frac{(1+z_L)r_s^2D_S}{cD_LD_{LS}},\\qquad w=2\\pi f t_s.\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nG(f;\\theta_L)=F_+^*(2\\pi f t_s,y;\\kappa_s),\\qquad\n\\widetilde h_L=G\\,\\widetilde h_0(f;\\theta_S),\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n\\log\\mathcal L=-\\tfrac12(d-Gh_0\\mid d-Gh_0)+\\mathrm{constant},\\qquad\n(a\\mid b)=4\\operatorname{Re}\\int\\frac{a(f)b^*(f)}{S_n(f)}\\,df.\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nT_F^{\\rm new\\ pair}=T_{\\rm prepare}+T_{\\rm first\\ band},\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nT_F^{\\rm fixed\\ pair}=T_{\\rm prepare}+\\sum_{j=1}^K T_{{\\rm evaluate},j}.\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\nS_{\\rm total}=\\frac{1}{1-p+p/s}.\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\psi(z)=2k\\left\\{\\operatorname{Log}^2(z/2)\n                    +\\arccos^2(1/z)\\right\\}.                 \\tag{A.1}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n F=\\lim_{\\eta\\downarrow0}F_\\eta,\\qquad\n F_\\eta=\\frac{w}{2\\pi i}\\int_{\\mathbb R^2}\n e^{-\\eta|\\boldsymbol x|^2}\n e^{iw[|\\boldsymbol x-\\boldsymbol y|^2/2-\\psi(|\\boldsymbol x|)-t_{\\min}]}\n \\,d^2\\boldsymbol x .                                      \\tag{A.2}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\Gamma_r:\\quad z=r+(1+i)u,\\quad -r\\leq u<\\infty,\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n I_{\\Gamma_r}=-\\frac{iw}{2}e^{iw\\tau_c}\n \\int_{\\Gamma_r}zH_0^{(2)}(qz)\n       e^{iw[z^2/2-\\psi(z)]}\\,dz.                            \\tag{A.3}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\begin{split}\n h(t)&=\\log\\frac{1+\\sqrt{1+t^2}}2,\\qquad L_t=\\log(t/2),\\\\\n a(t)&=2kh(t)[2L_t-h(t)],\\qquad b(t)=2\\pi kh(t),\\\\\n d(t)&=t^2/2+a(t),\n \\end{split}                                                \\tag{A.4}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\begin{split}\n C(w,q)&=\\frac{2w}{\\pi}\\int_0^\\infty\n       tK_0(qt)e^{-iwd(t)}\\sinh[wb(t)]\\,dt,\\\\\n T_r(w,q)&=\\frac{w}{\\pi}\\int_r^\\infty\n       tK_0(qt)e^{-iwd(t)-wb(t)}\\,dt .\n \\end{split}                                                \\tag{A.5}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\boxed{F=I_{\\Gamma_r}+e^{iw\\tau_c}\\{C(w,q)+T_r(w,q)\\}.}     \\tag{A.6}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\delta(z)=\\operatorname{Log}\\frac{1+\\sqrt{1-z^2}}2\n          =-z^2/4+O(z^4)\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\psi(z)=2k\\{\\ell(z)^2-[\\ell(z)+\\delta(z)]^2\\}\n        =kz^2\\ell(z)+O\\bigl(k|z|^4[1+|\\log|z||]\\bigr).     \\tag{A.7}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n O\\bigl(\\epsilon^2[1+|\\log\\epsilon|]\\bigr)\\longrightarrow0, \\tag{A.8}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\begin{split}\n \\psi(z)&=2k\\operatorname{Log}^2(z/2)+\\frac{k\\pi^2}{2}\n                         +O(k/|z|),\\\\\n \\Im\\psi(Re^{i\\theta})&=4k\\theta\\log(R/2)+O(k/R).\n \\end{split}                                                \\tag{A.9}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\psi'(x)=\\frac{4k\\log(x/2)}x+O(k/x^2),\\qquad\n \\psi''(x)=\\frac{4k[1-\\log(x/2)]}{x^2}+O(k/x^3).             \\tag{A.10}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n H_0^{(1)}(it)=-\\frac{2i}{\\pi}K_0(t),\\qquad\n H_0^{(2)}(-it)=\\frac{2i}{\\pi}K_0(t),\\quad t>0.              \\tag{A.11}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n K_0(\\zeta)=e^{-\\zeta}\\sqrt{\\frac{\\pi}{2\\zeta}}B(\\zeta),\n \\quad B(\\zeta)=\\frac1{\\sqrt\\pi}\\int_0^\\infty\n e^{-s}s^{-1/2}\\left(1+\\frac{s}{2\\zeta}\\right)^{-1/2}ds.    \\tag{A.12}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n B(\\zeta)=1+O(|\\zeta|^{-1}),\\qquad\n B'(\\zeta)=O(|\\zeta|^{-2})                                 \\tag{A.13}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\begin{split}\n H_0^{(1)}(qz)&=\\sqrt{\\frac{2}{\\pi qz}}\\,\n       e^{i(qz-\\pi/4)}B(-iqz),\\\\\n H_0^{(2)}(qz)&=\\sqrt{\\frac{2}{\\pi qz}}\\,\n       e^{-i(qz-\\pi/4)}B(iqz).\n \\end{split}                                                \\tag{A.14}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n F_\\eta=-iw e^{iw\\tau_c}\\int_0^\\infty\n xJ_0(qx)e^{-\\eta x^2}e^{iw[x^2/2-\\psi(x)]}\\,dx.            \\tag{A.15}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n A_\\pm=\\int_0^\\infty f_\\pm(x)\\,dx,\\qquad\n f_+(z)=zH_0^{(1)}(qz)e^{iw[z^2/2-\\psi(z)]},\\quad\n f_-(z)=zH_0^{(2)}(qz)e^{iw[z^2/2-\\psi(z)]}.                \\tag{A.16}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n f_\\pm(x)=a_\\pm(x)e^{ig_\\pm(x)},\\qquad\n g_\\pm(x)=wx^2/2\\pm qx-w\\psi(x).\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n g_\\pm'=wx\\pm q-w\\psi'(x)\\geq c x,\\qquad g_\\pm''=O(1)\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\int_R^S f_\\pm(x)dx=\n \\left[\\frac{a_\\pm(x)}{ig_\\pm'(x)}e^{ig_\\pm(x)}\\right]_R^S\n -\\int_R^S\\left(\\frac{a_\\pm}{ig_\\pm'}\\right)'e^{ig_\\pm}dx.\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\left|\\int_R^\\infty f_\\pm(x)dx\\right|\\leq C R^{-1/2}.      \\tag{A.17}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\int_R^\\infty v_\\eta(x)f_\\pm(x)dx\n       =-\\int_R^\\infty v_\\eta'(x)P_R(x)dx,\n \\quad\n \\left|\\int_R^\\infty v_\\eta f_\\pm\\right|\\leq2CR^{-1/2}.     \\tag{A.18}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n F=-\\frac{iw}{2}e^{iw\\tau_c}(A_++A_-).                     \\tag{A.19}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n C R^{1/2}\\exp\\left[-\\frac{wR^2}{2}\\sin2\\theta\n                    -qR\\sin\\theta\n                    +4wk\\theta\\log(R/2)+O(R^{-1})\\right].  \\tag{A.20}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n C R^{3/2+2\\pi wk}e^{-qR/\\sqrt2}\\longrightarrow0.           \\tag{A.21}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n A_+=\\int_{0}^{i\\infty}f_+(z)dz.                            \\tag{A.22}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\arccos(-i/t)=\\pi/2+i\\operatorname{asinh}(1/t),\\quad\n L_t+\\operatorname{asinh}(1/t)=h(t).\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\psi(it)=a(t)+ib(t),\\qquad \\psi(-it)=a(t)-ib(t).             \\tag{A.23}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n J_+^{\\alpha,\\beta}=\\int_\\alpha^\\beta\n       tK_0(qt)e^{-iwd(t)+wb(t)}dt,\\qquad\n J_-^{\\alpha,\\beta}=\\int_\\alpha^\\beta\n       tK_0(qt)e^{-iwd(t)-wb(t)}dt.                          \\tag{A.24}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\boxed{A_+=\\frac{2i}{\\pi}J_+^{0,\\infty}.}                 \\tag{A.25}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n C R^{3/2}\\int_0^{\\theta_R}\n \\exp\\left[-\\frac{wR^2}{2}\\sin2\\theta\n             +qR\\sin\\theta+4wk\\theta\\log(R/2)\\right]d\\theta.\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\left[-\\frac{2w}{\\pi}R^2+qR+4wk\\log(R/2)\\right]\\theta\n \\leq-cR^2\\theta\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\left|e^{iwz^2/2-iqz}\\right|\n       =\\exp[-wu^2+(q-wr)u].                               \\tag{A.26}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n A_-=\\int_0^{-ir}f_-(z)dz+A_{\\Gamma_r}.\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\boxed{A_-=A_{\\Gamma_r}-\\frac{2i}{\\pi}J_-^{0,r}.}         \\tag{A.27}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\begin{split}\n F&=I_{\\Gamma_r}+\\frac{w}{\\pi}e^{iw\\tau_c}\n                  \\left[J_+^{0,\\infty}-J_-^{0,r}\\right]\\\\\n  &=I_{\\Gamma_r}+\\frac{w}{\\pi}e^{iw\\tau_c}\n       \\left[J_+^{0,\\infty}-J_-^{0,\\infty}+J_-^{r,\\infty}\\right].\n \\end{split}                                                \\tag{A.28}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n |T_r|\\leq\\frac{w}{\\pi}\\int_r^\\infty tK_0(qt)dt\n          =\\frac{wr}{\\pi q}K_1(qr).                        \\tag{A.29}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n L_r:\\ z=r+(1+i)u,\\quad-\\infty<u<\\infty,\\qquad\n I_{L_r}=-\\frac{iw}{2}e^{iw\\tau_c}\\int_{L_r}f_-(z)dz.        \\tag{A.30}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n C R^{3/2}e^{-qR/\\sqrt2}\\longrightarrow0.                  \\tag{A.31}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\int_{-i\\infty}^{-ir}f_-(z)dz=\\frac{2i}{\\pi}J_-^{r,\\infty},\n \\qquad\n \\boxed{I_{L_r}-I_{\\Gamma_r}=e^{iw\\tau_c}T_r.}             \\tag{A.32}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n \\boxed{F=I_{L_r}+e^{iw\\tau_c}C(w,q).}                     \\tag{A.33}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n F_\\eta=\\frac{-iw}{2(\\eta-iw/2)}\n       \\exp\\left[\\frac{iwy^2}{2}\n                  -\\frac{q^2}{4(\\eta-iw/2)}\\right]\n       \\longrightarrow1,\\qquad q=wy.                      \\tag{A.34}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "\n\\begin{aligned}\nc_2={}&-\\frac{3(\\lambda_r-\\lambda_t)(3\\lambda_r+5\\lambda_t)}{128r^4\\lambda_r^2\\lambda_t^2}\n +\\frac{p_3(\\lambda_r-5\\lambda_t)}{32r^3\\lambda_r^3\\lambda_t}\n +\\frac{p_4(5\\lambda_t-\\lambda_r)}{64r^2\\lambda_r^3\\lambda_t}\\\\\n&-\\frac{p_5}{16r\\lambda_r^3}-\\frac{p_6}{48\\lambda_r^3}\n +\\frac{5p_3^2(7\\lambda_t-\\lambda_r)}{192r^2\\lambda_r^4\\lambda_t}\n -\\frac{35p_3p_4}{96r\\lambda_r^4}\\\\\n&-\\frac{7p_3p_5}{48\\lambda_r^4}-\\frac{35p_4^2}{384\\lambda_r^4}\n -\\frac{35p_3^3}{96r\\lambda_r^5}\n -\\frac{35p_3^2p_4}{64\\lambda_r^5}\n -\\frac{385p_3^4}{1152\\lambda_r^6}.\n\\end{aligned}\n",
+    "displayMode": true
+  },
+  {
+    "tex": "w>0",
+    "displayMode": false
+  },
+  {
+    "tex": "q=wy>0",
+    "displayMode": false
+  },
+  {
+    "tex": "k=\\kappa_s\\geq0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(0)=0",
+    "displayMode": false
+  },
+  {
+    "tex": "z=1",
+    "displayMode": false
+  },
+  {
+    "tex": "\\boldsymbol y=(y,0)",
+    "displayMode": false
+  },
+  {
+    "tex": "t_{\\min}",
+    "displayMode": false
+  },
+  {
+    "tex": "|\\boldsymbol x-\\boldsymbol y|^2/2-\\psi(|\\boldsymbol x|)",
+    "displayMode": false
+  },
+  {
+    "tex": "\\tau_c=y^2/2-t_{\\min}",
+    "displayMode": false
+  },
+  {
+    "tex": "r>0",
+    "displayMode": false
+  },
+  {
+    "tex": "-ir",
+    "displayMode": false
+  },
+  {
+    "tex": "r",
+    "displayMode": false
+  },
+  {
+    "tex": "t>0",
+    "displayMode": false
+  },
+  {
+    "tex": "K_0",
+    "displayMode": false
+  },
+  {
+    "tex": "w,q,r",
+    "displayMode": false
+  },
+  {
+    "tex": "k",
+    "displayMode": false
+  },
+  {
+    "tex": "[0,K]",
+    "displayMode": false
+  },
+  {
+    "tex": "q=0",
+    "displayMode": false
+  },
+  {
+    "tex": "w=0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\arccos(1/z)",
+    "displayMode": false
+  },
+  {
+    "tex": "0<z<1",
+    "displayMode": false
+  },
+  {
+    "tex": "z=1",
+    "displayMode": false
+  },
+  {
+    "tex": "\\cos\\sqrt v=1-v/2+O(v^2)",
+    "displayMode": false
+  },
+  {
+    "tex": "\\arccos^2(1/z)",
+    "displayMode": false
+  },
+  {
+    "tex": "\\Re z>0",
+    "displayMode": false
+  },
+  {
+    "tex": "1/z",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(-z)",
+    "displayMode": false
+  },
+  {
+    "tex": "\\ell(z)=\\operatorname{Log}(2/z)",
+    "displayMode": false
+  },
+  {
+    "tex": "+1",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(z)\\to0",
+    "displayMode": false
+  },
+  {
+    "tex": "e^{-iw\\psi(z)}",
+    "displayMode": false
+  },
+  {
+    "tex": "O(\\epsilon)",
+    "displayMode": false
+  },
+  {
+    "tex": "zH_0^{(j)}(qz)",
+    "displayMode": false
+  },
+  {
+    "tex": "O(\\epsilon[1+|\\log\\epsilon|])",
+    "displayMode": false
+  },
+  {
+    "tex": "|\\arg\\zeta|<\\pi",
+    "displayMode": false
+  },
+  {
+    "tex": "\\zeta",
+    "displayMode": false
+  },
+  {
+    "tex": "K_0(\\zeta)=\\int_0^\\infty e^{-\\zeta\\cosh v}dv",
+    "displayMode": false
+  },
+  {
+    "tex": "s=\\zeta(\\cosh v-1)",
+    "displayMode": false
+  },
+  {
+    "tex": "|\\arg\\zeta|\\leq3\\pi/4",
+    "displayMode": false
+  },
+  {
+    "tex": "\\left|1+s/(2\\zeta)\\right|\\geq1/\\sqrt2",
+    "displayMode": false
+  },
+  {
+    "tex": "s\\geq0",
+    "displayMode": false
+  },
+  {
+    "tex": "B",
+    "displayMode": false
+  },
+  {
+    "tex": "|\\zeta|\\to\\infty",
+    "displayMode": false
+  },
+  {
+    "tex": "s/(2\\zeta)",
+    "displayMode": false
+  },
+  {
+    "tex": "0\\leq\\arg z\\leq\\pi/4",
+    "displayMode": false
+  },
+  {
+    "tex": "\\eta>0",
+    "displayMode": false
+  },
+  {
+    "tex": "a_\\pm=O(x^{1/2})",
+    "displayMode": false
+  },
+  {
+    "tex": "a_\\pm'=O(x^{-1/2})",
+    "displayMode": false
+  },
+  {
+    "tex": "x",
+    "displayMode": false
+  },
+  {
+    "tex": "c>0",
+    "displayMode": false
+  },
+  {
+    "tex": "[R,S]",
+    "displayMode": false
+  },
+  {
+    "tex": "O(x^{-1/2})",
+    "displayMode": false
+  },
+  {
+    "tex": "O(x^{-3/2})",
+    "displayMode": false
+  },
+  {
+    "tex": "P_R(s)=\\int_R^s f_\\pm(x)dx",
+    "displayMode": false
+  },
+  {
+    "tex": "\\sup_{s\\geq R}|P_R(s)|\\leq2CR^{-1/2}",
+    "displayMode": false
+  },
+  {
+    "tex": "v_\\eta(x)=e^{-\\eta x^2}",
+    "displayMode": false
+  },
+  {
+    "tex": "\\eta>0",
+    "displayMode": false
+  },
+  {
+    "tex": "J_0=(H_0^{(1)}+H_0^{(2)})/2",
+    "displayMode": false
+  },
+  {
+    "tex": "e^{-\\eta z^2}",
+    "displayMode": false
+  },
+  {
+    "tex": "e^{+\\eta t^2}",
+    "displayMode": false
+  },
+  {
+    "tex": "A_+",
+    "displayMode": false
+  },
+  {
+    "tex": "z=Re^{i\\theta}",
+    "displayMode": false
+  },
+  {
+    "tex": "0\\leq\\theta\\leq\\pi/2",
+    "displayMode": false
+  },
+  {
+    "tex": "0\\leq\\theta\\leq\\pi/4",
+    "displayMode": false
+  },
+  {
+    "tex": "\\sin2\\theta\\geq4\\theta/\\pi",
+    "displayMode": false
+  },
+  {
+    "tex": "R",
+    "displayMode": false
+  },
+  {
+    "tex": "-cR^2\\theta",
+    "displayMode": false
+  },
+  {
+    "tex": "R\\,d\\theta",
+    "displayMode": false
+  },
+  {
+    "tex": "O(R^{-1/2})",
+    "displayMode": false
+  },
+  {
+    "tex": "\\pi/4\\leq\\theta\\leq\\pi/2",
+    "displayMode": false
+  },
+  {
+    "tex": "e^{-qR/\\sqrt2}",
+    "displayMode": false
+  },
+  {
+    "tex": "C R^{2\\pi wk}",
+    "displayMode": false
+  },
+  {
+    "tex": "q>0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\operatorname{Log}(it/2)=L_t+i\\pi/2",
+    "displayMode": false
+  },
+  {
+    "tex": "h\\geq0",
+    "displayMode": false
+  },
+  {
+    "tex": "b\\geq0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\infty",
+    "displayMode": false
+  },
+  {
+    "tex": "z\\,dz=-t\\,dt",
+    "displayMode": false
+  },
+  {
+    "tex": "z=it",
+    "displayMode": false
+  },
+  {
+    "tex": "h=O(t^2)",
+    "displayMode": false
+  },
+  {
+    "tex": "a=O(t^2[1+|\\log t|])",
+    "displayMode": false
+  },
+  {
+    "tex": "b=O(t^2)",
+    "displayMode": false
+  },
+  {
+    "tex": "tK_0(qt)=O(t[1+|\\log t|])",
+    "displayMode": false
+  },
+  {
+    "tex": "h=\\log(t/2)+O(t^{-1})",
+    "displayMode": false
+  },
+  {
+    "tex": "e^{-qt}",
+    "displayMode": false
+  },
+  {
+    "tex": "t",
+    "displayMode": false
+  },
+  {
+    "tex": "A_-",
+    "displayMode": false
+  },
+  {
+    "tex": "0\\to-ir\\to\\Gamma_r\\to\\infty",
+    "displayMode": false
+  },
+  {
+    "tex": "\\pi/4",
+    "displayMode": false
+  },
+  {
+    "tex": "0,-ir,r",
+    "displayMode": false
+  },
+  {
+    "tex": "r",
+    "displayMode": false
+  },
+  {
+    "tex": "\\Gamma_r",
+    "displayMode": false
+  },
+  {
+    "tex": "r",
+    "displayMode": false
+  },
+  {
+    "tex": "r",
+    "displayMode": false
+  },
+  {
+    "tex": "R>r",
+    "displayMode": false
+  },
+  {
+    "tex": "P_R",
+    "displayMode": false
+  },
+  {
+    "tex": "\\Gamma_r",
+    "displayMode": false
+  },
+  {
+    "tex": "|z|=R",
+    "displayMode": false
+  },
+  {
+    "tex": "0<\\theta_R<\\pi/4",
+    "displayMode": false
+  },
+  {
+    "tex": "\\sin2\\theta\\geq4\\theta/\\pi",
+    "displayMode": false
+  },
+  {
+    "tex": "\\sin\\theta\\leq\\theta",
+    "displayMode": false
+  },
+  {
+    "tex": "R",
+    "displayMode": false
+  },
+  {
+    "tex": "O(R^{-1/2})",
+    "displayMode": false
+  },
+  {
+    "tex": "H_0^{(2)}",
+    "displayMode": false
+  },
+  {
+    "tex": "e^{qR\\sin\\theta}",
+    "displayMode": false
+  },
+  {
+    "tex": "z=r+(1+i)u",
+    "displayMode": false
+  },
+  {
+    "tex": "1+u",
+    "displayMode": false
+  },
+  {
+    "tex": "|z|\\geq r/\\sqrt2",
+    "displayMode": false
+  },
+  {
+    "tex": "z=1",
+    "displayMode": false
+  },
+  {
+    "tex": "A_{\\Gamma_r}=\\int_{\\Gamma_r}f_-(z)dz",
+    "displayMode": false
+  },
+  {
+    "tex": "z=-it",
+    "displayMode": false
+  },
+  {
+    "tex": "t:0\\to r",
+    "displayMode": false
+  },
+  {
+    "tex": "z\\,dz=-t\\,dt",
+    "displayMode": false
+  },
+  {
+    "tex": "H_0^{(2)}(-iqt)=2iK_0(qt)/\\pi",
+    "displayMode": false
+  },
+  {
+    "tex": "z\\,dz",
+    "displayMode": false
+  },
+  {
+    "tex": "(w/\\pi)(J_+^{0,\\infty}-J_-^{0,\\infty})=C",
+    "displayMode": false
+  },
+  {
+    "tex": "(w/\\pi)J_-^{r,\\infty}=T_r",
+    "displayMode": false
+  },
+  {
+    "tex": "T_r",
+    "displayMode": false
+  },
+  {
+    "tex": "b\\geq0",
+    "displayMode": false
+  },
+  {
+    "tex": "tK_1(qt)",
+    "displayMode": false
+  },
+  {
+    "tex": "-ir",
+    "displayMode": false
+  },
+  {
+    "tex": "-3\\pi/4\\leq\\arg z\\leq-\\pi/2",
+    "displayMode": false
+  },
+  {
+    "tex": "\\sin2\\theta\\geq0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\sin\\theta\\leq-1/\\sqrt2",
+    "displayMode": false
+  },
+  {
+    "tex": "R\\geq2",
+    "displayMode": false
+  },
+  {
+    "tex": "\\int_{-i\\infty}^{-ir}f_-(z)dz",
+    "displayMode": false
+  },
+  {
+    "tex": "t",
+    "displayMode": false
+  },
+  {
+    "tex": "\\infty",
+    "displayMode": false
+  },
+  {
+    "tex": "r",
+    "displayMode": false
+  },
+  {
+    "tex": "L_r",
+    "displayMode": false
+  },
+  {
+    "tex": "T_r",
+    "displayMode": false
+  },
+  {
+    "tex": "T_r",
+    "displayMode": false
+  },
+  {
+    "tex": "k=0",
+    "displayMode": false
+  },
+  {
+    "tex": "t_{\\min}=0",
+    "displayMode": false
+  },
+  {
+    "tex": "C=0",
+    "displayMode": false
+  },
+  {
+    "tex": "T_r",
+    "displayMode": false
+  },
+  {
+    "tex": "I_{\\Gamma_r}+e^{iw\\tau_c}T_r=1",
+    "displayMode": false
+  },
+  {
+    "tex": "I_{L_r}=1",
+    "displayMode": false
+  },
+  {
+    "tex": "w,q,r>0",
+    "displayMode": false
+  },
+  {
+    "tex": "10^{-10}",
+    "displayMode": false
+  },
+  {
+    "tex": "10^{-8}",
+    "displayMode": false
+  },
+  {
+    "tex": "K_0",
+    "displayMode": false
+  },
+  {
+    "tex": "z=1",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(z)",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(-z)",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(\\sqrt{z^2})",
+    "displayMode": false
+  },
+  {
+    "tex": "t_m",
+    "displayMode": false
+  },
+  {
+    "tex": "+",
+    "displayMode": false
+  },
+  {
+    "tex": "A",
+    "displayMode": false
+  },
+  {
+    "tex": "F",
+    "displayMode": false
+  },
+  {
+    "tex": "R=F-A",
+    "displayMode": false
+  },
+  {
+    "tex": "\\tau_c=y^2/2-t_m",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "s=wy^2/2=qy/2",
+    "displayMode": false
+  },
+  {
+    "tex": "s",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "t>0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(it)=a+ib",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(-it)=a-ib",
+    "displayMode": false
+  },
+  {
+    "tex": "h",
+    "displayMode": false
+  },
+  {
+    "tex": "K_0",
+    "displayMode": false
+  },
+  {
+    "tex": "r>0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\Gamma_r",
+    "displayMode": false
+  },
+  {
+    "tex": "z=r+(1+i)u",
+    "displayMode": false
+  },
+  {
+    "tex": "-r\\le u<\\infty",
+    "displayMode": false
+  },
+  {
+    "tex": "-ir",
+    "displayMode": false
+  },
+  {
+    "tex": "r",
+    "displayMode": false
+  },
+  {
+    "tex": "q>0",
+    "displayMode": false
+  },
+  {
+    "tex": "O(R^{-1/2})",
+    "displayMode": false
+  },
+  {
+    "tex": "0\\to-ir\\to\\Gamma_r",
+    "displayMode": false
+  },
+  {
+    "tex": "\\Gamma_r",
+    "displayMode": false
+  },
+  {
+    "tex": "L_r:z=r+(1+i)u",
+    "displayMode": false
+  },
+  {
+    "tex": "-\\infty<u<\\infty",
+    "displayMode": false
+  },
+  {
+    "tex": "H_0^{(2),e}(u)=e^{iu}H_0^{(2)}(u)",
+    "displayMode": false
+  },
+  {
+    "tex": "w",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "r=r_m",
+    "displayMode": false
+  },
+  {
+    "tex": "t",
+    "displayMode": false
+  },
+  {
+    "tex": "a",
+    "displayMode": false
+  },
+  {
+    "tex": "b",
+    "displayMode": false
+  },
+  {
+    "tex": "y\\in[8,256]",
+    "displayMode": false
+  },
+  {
+    "tex": "\\kappa_s\\in[0.03,0.7]",
+    "displayMode": false
+  },
+  {
+    "tex": "q\\in[0.3,12]",
+    "displayMode": false
+  },
+  {
+    "tex": "p_n=\\psi^{(n)}(r_m)",
+    "displayMode": false
+  },
+  {
+    "tex": "c_2",
+    "displayMode": false
+  },
+  {
+    "tex": "C_3",
+    "displayMode": false
+  },
+  {
+    "tex": "I_1+e^{iw\\tau_c}C_2",
+    "displayMode": false
+  },
+  {
+    "tex": "I_2+e^{iw\\tau_c}(C_2+C_3)",
+    "displayMode": false
+  },
+  {
+    "tex": "I_1+e^{iw\\tau_c}C_W",
+    "displayMode": false
+  },
+  {
+    "tex": "I_2+e^{iw\\tau_c}C_W",
+    "displayMode": false
+  },
+  {
+    "tex": "w^{-2}",
+    "displayMode": false
+  },
+  {
+    "tex": "C_3",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "y\\gg1",
+    "displayMode": false
+  },
+  {
+    "tex": "wy^2/2\\gg1",
+    "displayMode": false
+  },
+  {
+    "tex": "w",
+    "displayMode": false
+  },
+  {
+    "tex": "y",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "J_0",
+    "displayMode": false
+  },
+  {
+    "tex": "\\sigma_j",
+    "displayMode": false
+  },
+  {
+    "tex": "d\\log w",
+    "displayMode": false
+  },
+  {
+    "tex": "M_+\\le10^{-8}",
+    "displayMode": false
+  },
+  {
+    "tex": "\\rho_+\\le0.01",
+    "displayMode": false
+  },
+  {
+    "tex": "10^{-10}",
+    "displayMode": false
+  },
+  {
+    "tex": "\\kappa_s",
+    "displayMode": false
+  },
+  {
+    "tex": "y",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "w y^2/2",
+    "displayMode": false
+  },
+  {
+    "tex": "10^{-8}",
+    "displayMode": false
+  },
+  {
+    "tex": "10^{-10}",
+    "displayMode": false
+  },
+  {
+    "tex": "\\rho_+",
+    "displayMode": false
+  },
+  {
+    "tex": "2.40\\times10^{-12}",
+    "displayMode": false
+  },
+  {
+    "tex": "\\rho_+",
+    "displayMode": false
+  },
+  {
+    "tex": "3.38\\times10^{-6}",
+    "displayMode": false
+  },
+  {
+    "tex": "5.53\\times10^{-5}",
+    "displayMode": false
+  },
+  {
+    "tex": "\\Gamma_r",
+    "displayMode": false
+  },
+  {
+    "tex": "J_0",
+    "displayMode": false
+  },
+  {
+    "tex": "1.314\\times10^{-14}",
+    "displayMode": false
+  },
+  {
+    "tex": "7.50\\times10^{-13}",
+    "displayMode": false
+  },
+  {
+    "tex": "(q,w,\\kappa_s,r)=(0.3,0.1,0,0.5)",
+    "displayMode": false
+  },
+  {
+    "tex": "T_r=0.1325131391500408-0.1167886924374186i",
+    "displayMode": false
+  },
+  {
+    "tex": "0.1766333",
+    "displayMode": false
+  },
+  {
+    "tex": "\\rho_+=0.010044573839>0.01",
+    "displayMode": false
+  },
+  {
+    "tex": "D_L,D_S,D_{LS}",
+    "displayMode": false
+  },
+  {
+    "tex": "r_s",
+    "displayMode": false
+  },
+  {
+    "tex": "\\rho_s",
+    "displayMode": false
+  },
+  {
+    "tex": "\\beta",
+    "displayMode": false
+  },
+  {
+    "tex": "r_s",
+    "displayMode": false
+  },
+  {
+    "tex": "t_s",
+    "displayMode": false
+  },
+  {
+    "tex": "\\widetilde h(f)=\\int h(t)e^{-2\\pi i f t}dt",
+    "displayMode": false
+  },
+  {
+    "tex": "F_+",
+    "displayMode": false
+  },
+  {
+    "tex": "\\exp(+iwT)",
+    "displayMode": false
+  },
+  {
+    "tex": "\\kappa_s",
+    "displayMode": false
+  },
+  {
+    "tex": "y",
+    "displayMode": false
+  },
+  {
+    "tex": "\\psi(x)",
+    "displayMode": false
+  },
+  {
+    "tex": "F",
+    "displayMode": false
+  },
+  {
+    "tex": "(\\kappa_s,y)",
+    "displayMode": false
+  },
+  {
+    "tex": "t_s",
+    "displayMode": false
+  },
+  {
+    "tex": "(\\kappa_s,y)",
+    "displayMode": false
+  },
+  {
+    "tex": "w=2\\pi f t_s",
+    "displayMode": false
+  },
+  {
+    "tex": "\\kappa_s",
+    "displayMode": false
+  },
+  {
+    "tex": "y",
+    "displayMode": false
+  },
+  {
+    "tex": "(\\kappa_s,y,t_s)",
+    "displayMode": false
+  },
+  {
+    "tex": "r_s\\mapsto a r_s",
+    "displayMode": false
+  },
+  {
+    "tex": "\\rho_s\\mapsto\\rho_s/a",
+    "displayMode": false
+  },
+  {
+    "tex": "\\beta\\mapsto a\\beta",
+    "displayMode": false
+  },
+  {
+    "tex": "(\\kappa_s,y)",
+    "displayMode": false
+  },
+  {
+    "tex": "t_s\\mapsto a^2t_s",
+    "displayMode": false
+  },
+  {
+    "tex": "K",
+    "displayMode": false
+  },
+  {
+    "tex": "p",
+    "displayMode": false
+  },
+  {
+    "tex": "s",
+    "displayMode": false
+  },
+  {
+    "tex": "p",
+    "displayMode": false
+  },
+  {
+    "tex": "d\\log w",
+    "displayMode": false
+  },
+  {
+    "tex": "q",
+    "displayMode": false
+  },
+  {
+    "tex": "r=r_m",
+    "displayMode": false
+  },
+  {
+    "tex": "p_n=\\psi^{(n)}(r_m)",
+    "displayMode": false
+  },
+  {
+    "tex": "I_2=A(1+ic_1/w+c_2/w^2)",
+    "displayMode": false
+  },
+  {
+    "tex": "p_5,p_6",
+    "displayMode": false
+  }
+]

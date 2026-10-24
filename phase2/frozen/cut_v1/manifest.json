@@ -1,0 +1,66 @@
+{
+  "model_id": "cut_v1",
+  "frozen_at": "2026-10-21T10:23:42.040342+08:00",
+  "package": "nfw_frozen_cut",
+  "files": {
+    "__init__.py": "93a185b559c044dc04fc3b37e4fc5fcb38763994938a45461507bc3a74d4bd6f",
+    "batch_cut.py": "c8660fb1baed2e6290d75de4f46c239b2233f68622a6abaf4558511e1ec9b0b2",
+    "born.py": "598bb093ff22fca4bee03a6b8d7a87e0927f02f0de34f49af718e0e840bb372d",
+    "controlled_cut.py": "a1a29f3eb0c2c7bd1a5dcb104688dda96965b9c87eab49f6e2826c56c1d7233d",
+    "cut_solver.py": "20d81b39d2ec816bc7bc5dd951d82dd10b951c61e4a5b5e2c6a876c7da078d20",
+    "hierarchy.py": "f7859afe0a69f85359efc1408443032d5ab244b1c9d2f093d6eb3bc70f8bf157",
+    "reference_stable.py": "c2576f7a49c78a4eeeedcf83c03619fc6cbcb96a3863ded433fbc123888ff9a3",
+    "spatial.py": "cc2570630e302deeeb2a782661ecc561a44e55ea5818a618bb0970fffd4e0beb"
+  },
+  "dependencies": {
+    "src/nfw_wave/__init__.py": "05bdeef5b572448ddcee215709bf41a9d3f691cf921f34f25099cee8f9465dcc",
+    "src/nfw_wave/approximations.py": "dc7a86b43139c7da38559a9783eb08caed6cbd5cd24b0ad20323e1ff44119aac",
+    "src/nfw_wave/band_hybrid.py": "541ffcf7fa09ef74b15f816507b77ed6854defef54dc3ddd89d0273c023509bb",
+    "src/nfw_wave/hybrid.py": "d9904a1188457c8f6b6e695035c2e08e463cf58c9f46c37bf2054c549ba6471b",
+    "src/nfw_wave/image_expansion.py": "a7afde9a700792eb69bfd848a9faedc4fbd73d9a3e8aaff78c624b510acdf055",
+    "src/nfw_wave/lens.py": "e4a7c626d04831913e8f8191ff81b97fcdb7265cb7ba7cee489e813d5a89beb4",
+    "src/nfw_wave/metrics.py": "f781a2770e876251ac1b4311df8b670e23e02d2b03077fe18cf8636f48eb18e8",
+    "src/nfw_wave/published_baseline.py": "c62f42a54b5fe76e93ce673106289cc8cb4e2af5d1bdb682f9e330ed0b728056",
+    "src/nfw_wave/reference.py": "454f4f21eb99f0daae6d9fac493cfe7a49f404f4566cdf1cc249a01a1fcf18ac"
+  },
+  "nominal_box": {
+    "q": [
+      0.3,
+      12.0
+    ],
+    "y": [
+      8.0,
+      256.0
+    ],
+    "kappa_s": [
+      0.03,
+      0.7
+    ]
+  },
+  "primary_fixed_nodes": [
+    96,
+    96
+  ],
+  "controller_nodes": [
+    48,
+    96,
+    192
+  ],
+  "indicator": "2*abs(R_fine-R_coarse)+16*eps*(1+abs(w*psi(xm)))",
+  "indicator_status": "empirical, not a bound",
+  "routing": "whole-array 96, then 192, then stable split-Hankel; outside nominal box uses stable split-Hankel",
+  "band_measure": "d(log w)",
+  "band_indicator": "E/(R-E), if R>E; empirical E leaves empirical status",
+  "center_angle": -0.7853981633974483,
+  "calibration_sha256": "402fca8bd22e0ba5e976f59e22b94e13a26d27cdd54a70db950bc435fd9079f5",
+  "environment": {
+    "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "mpmath": "1.3.0"
+  },
+  "primary_atol": 1e-08,
+  "secondary_atol": 1e-10,
+  "band_rtol": 0.01
+}

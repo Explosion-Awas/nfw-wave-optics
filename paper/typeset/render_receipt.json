@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "renderer": "Chromium print from static KaTeX HTML (not a LaTeX compilation)",
+  "katex": "0.16.47",
+  "source_sha256": "bb5dd752ba06a6c46ee49680f739c62853dcdaa9e796e02ac0ab894913f0086e",
+  "pdf_sha256": "003f568c4b5d34f979347ebe4ae6ad80501d1b6a1fe348c519d8d3943651ef15",
+  "pdf_bytes": 450649,
+  "html_bytes": 912317,
+  "math_blocks": 325,
+  "display_math": 66,
+  "layout": {
+    "shrunk": [],
+    "overflow": [],
+    "missingReferences": [],
+    "strayTextNodes": [],
+    "displayMath": 66,
+    "tables": 6,
+    "mathErrors": 0,
+    "bodyTextLength": 53773
+  },
+  "warnings": [],
+  "networkErrors": [],
+  "pdf_author_metadata": "GPT-6.1sol Max & Hermes",
+  "metadata_postprocessing": "pypdf; page content and geometry retained",
+  "pdf_pages": 15,
+  "source_revision_scientific_body_unchanged": true
+}

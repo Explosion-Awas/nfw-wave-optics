@@ -1,0 +1,1118 @@
+{
+  "verdict": "ACCEPT_METHOD_CANDIDATE",
+  "scope": "pinned standard untruncated NFW, finite six preselected bands; new-lens prepare-plus-first workload only; empirical accuracy gate",
+  "n_executions": 32,
+  "n_pairs": 16,
+  "n_reused_distinct_configurations": 8,
+  "n_new_parameter_configurations": 0,
+  "all_32_whole_bands_accuracy_passed": true,
+  "protected_current_hashes_match": 713,
+  "source_unchanged": true,
+  "confirmation_preregistered_before_run": true,
+  "all_four_bands_pass_conservative_twofold_gate": true,
+  "band_summary": [
+    {
+      "band": 1,
+      "paired_ratio_median": 3.658711592776074,
+      "paired_ratio_min": 3.604256968525465,
+      "paired_ratio_max": 3.928279192367857,
+      "native_cold_median_s": 0.6309640159999992,
+      "cut_cold_median_s": 0.1672762340000027,
+      "all_four_pairs_twofold": true
+    },
+    {
+      "band": 2,
+      "paired_ratio_median": 6.1499502023667,
+      "paired_ratio_min": 5.839559413141922,
+      "paired_ratio_max": 6.597861748399208,
+      "native_cold_median_s": 0.960527767500003,
+      "cut_cold_median_s": 0.15097823300000002,
+      "all_four_pairs_twofold": true
+    },
+    {
+      "band": 3,
+      "paired_ratio_median": 3.928383353960659,
+      "paired_ratio_min": 3.0659396849382183,
+      "paired_ratio_max": 4.558311926250812,
+      "native_cold_median_s": 0.7057534775000001,
+      "cut_cold_median_s": 0.1663145749999959,
+      "all_four_pairs_twofold": true
+    },
+    {
+      "band": 4,
+      "paired_ratio_median": 6.34189541952843,
+      "paired_ratio_min": 5.711731803475975,
+      "paired_ratio_max": 7.554038973113681,
+      "native_cold_median_s": 1.040993568499994,
+      "cut_cold_median_s": 0.16001153399997747,
+      "all_four_pairs_twofold": true
+    }
+  ],
+  "pairs": [
+    {
+      "band": 1,
+      "pair": 0,
+      "native_cold_s": 0.6521049680000015,
+      "cut_cold_s": 0.16600270400000028,
+      "native_over_cut": 3.928279192367857,
+      "passes_twofold": true
+    },
+    {
+      "band": 1,
+      "pair": 1,
+      "native_cold_s": 0.6087893949999881,
+      "cut_cold_s": 0.16456597300000197,
+      "native_over_cut": 3.6993637500018353,
+      "passes_twofold": true
+    },
+    {
+      "band": 1,
+      "pair": 2,
+      "native_cold_s": 0.6538468509999973,
+      "cut_cold_s": 0.18140961000000289,
+      "native_over_cut": 3.604256968525465,
+      "passes_twofold": true
+    },
+    {
+      "band": 1,
+      "pair": 3,
+      "native_cold_s": 0.6098230639999969,
+      "cut_cold_s": 0.1685497640000051,
+      "native_over_cut": 3.618059435550313,
+      "passes_twofold": true
+    },
+    {
+      "band": 2,
+      "pair": 0,
+      "native_cold_s": 1.0024755710000033,
+      "cut_cold_s": 0.15193946299999794,
+      "native_over_cut": 6.597861748399208,
+      "passes_twofold": true
+    },
+    {
+      "band": 2,
+      "pair": 1,
+      "native_cold_s": 1.058994602999995,
+      "cut_cold_s": 0.17301071400000012,
+      "native_over_cut": 6.120977010706945,
+      "passes_twofold": true
+    },
+    {
+      "band": 2,
+      "pair": 2,
+      "native_cold_s": 0.9185799640000027,
+      "cut_cold_s": 0.14866343300000295,
+      "native_over_cut": 6.178923394026455,
+      "passes_twofold": true
+    },
+    {
+      "band": 2,
+      "pair": 3,
+      "native_cold_s": 0.8760332020000021,
+      "cut_cold_s": 0.1500170030000021,
+      "native_over_cut": 5.839559413141922,
+      "passes_twofold": true
+    },
+    {
+      "band": 3,
+      "pair": 0,
+      "native_cold_s": 0.684855644999999,
+      "cut_cold_s": 0.16138799399999826,
+      "native_over_cut": 4.24353527189889,
+      "passes_twofold": true
+    },
+    {
+      "band": 3,
+      "pair": 1,
+      "native_cold_s": 0.7266513100000012,
+      "cut_cold_s": 0.23700769900000296,
+      "native_over_cut": 3.0659396849382183,
+      "passes_twofold": true
+    },
+    {
+      "band": 3,
+      "pair": 2,
+      "native_cold_s": 0.6187339279999975,
+      "cut_cold_s": 0.17124115599999357,
+      "native_over_cut": 3.6132314360224287,
+      "passes_twofold": true
+    },
+    {
+      "band": 3,
+      "pair": 3,
+      "native_cold_s": 0.7295109370000006,
+      "cut_cold_s": 0.16003971400000694,
+      "native_over_cut": 4.558311926250812,
+      "passes_twofold": true
+    },
+    {
+      "band": 4,
+      "pair": 0,
+      "native_cold_s": 1.0924826189999983,
+      "cut_cold_s": 0.1446223169999996,
+      "native_over_cut": 7.554038973113681,
+      "passes_twofold": true
+    },
+    {
+      "band": 4,
+      "pair": 1,
+      "native_cold_s": 1.1202875580000011,
+      "cut_cold_s": 0.18254533399999673,
+      "native_over_cut": 6.137037487904354,
+      "passes_twofold": true
+    },
+    {
+      "band": 4,
+      "pair": 2,
+      "native_cold_s": 0.9895045179999897,
+      "cut_cold_s": 0.15114430999997808,
+      "native_over_cut": 6.546753351152506,
+      "passes_twofold": true
+    },
+    {
+      "band": 4,
+      "pair": 3,
+      "native_cold_s": 0.9645901729999906,
+      "cut_cold_s": 0.16887875799997687,
+      "native_over_cut": 5.711731803475975,
+      "passes_twofold": true
+    }
+  ],
+  "records": [
+    {
+      "index": 0,
+      "band": 1,
+      "pair": 0,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\001_case.json",
+      "source_sha256": "f01c29d4251fd4da676b9e07774bef055c48c7041f8c1c67195df687f427985a",
+      "file": "run/000_case.json",
+      "sha256": "26e59338410e17c7d1a3ef3878e45d784e5ea499b78bf97cef74d8793d19682f",
+      "prepare_s": 0.6517259340000017,
+      "first_s": 0.0003790339999998338,
+      "cold_s": 0.6521049680000015,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "band": 1,
+      "pair": 0,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\005_case.json",
+      "source_sha256": "d692cb52cae82dafdaf443188f15cca424dca421392b1e54535cfebb4a7f89a7",
+      "file": "run/001_case.json",
+      "sha256": "7ec976701f1bce6299dddaf6b0a87345a5b5370c1c34909b2be73fd348b02e2c",
+      "prepare_s": 0.007980109000000013,
+      "first_s": 0.15802259500000027,
+      "cold_s": 0.16600270400000028,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "band": 2,
+      "pair": 0,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\002_case.json",
+      "source_sha256": "7d756d88c3d56b347dada146dfbdb46a27f1e77e59257118c57cdea3989c7a42",
+      "file": "run/002_case.json",
+      "sha256": "2811302d300f84f72a5c8984bbd75c82f9334bb021c356e658cf6cd5e04e836b",
+      "prepare_s": 1.0016470710000025,
+      "first_s": 0.0008285000000007869,
+      "cold_s": 1.0024755710000033,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "band": 2,
+      "pair": 0,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\009_case.json",
+      "source_sha256": "563284a073bea7c6636107cff7938090bb0869c0b0d441a06d74c5a208b6aef3",
+      "file": "run/003_case.json",
+      "sha256": "f85187ddca62e997db338c9826b335105bfd09340b5c95714ea93c76081cbabe",
+      "prepare_s": 0.002108837999998059,
+      "first_s": 0.14983062499999988,
+      "cold_s": 0.15193946299999794,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "band": 3,
+      "pair": 0,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\003_case.json",
+      "source_sha256": "ddf4ac7f62a5f29320a47bb610f07d4f57f5ffc27d4cccda3a372c695a01913e",
+      "file": "run/004_case.json",
+      "sha256": "d1d3ef1fcb9001151492aefe31e3b2ffd57d295b22878b3fe2c2687959be57d3",
+      "prepare_s": 0.6842806999999986,
+      "first_s": 0.0005749450000003264,
+      "cold_s": 0.684855644999999,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "band": 3,
+      "pair": 0,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\013_case.json",
+      "source_sha256": "7bba9816336c79eb6732bebcc7aebecf2ad18b5a9f40c9416ff7f3bf261917e0",
+      "file": "run/005_case.json",
+      "sha256": "d90b7ac1d4948038600c89b8da4a6bdd638ab70244dd7a600b7e7ca0b7d6bed7",
+      "prepare_s": 0.0028723679999984597,
+      "first_s": 0.1585156259999998,
+      "cold_s": 0.16138799399999826,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "band": 4,
+      "pair": 0,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\004_case.json",
+      "source_sha256": "020900fde7a4c19cd73140579b7751593334117bce19411eee34dd680ed4a27d",
+      "file": "run/006_case.json",
+      "sha256": "dbfb996779cf1bd9dc085d822b39294cb8ca62a82196a3f48035645c00ca9dc6",
+      "prepare_s": 1.0919264159999997,
+      "first_s": 0.0005562029999985896,
+      "cold_s": 1.0924826189999983,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "band": 4,
+      "pair": 0,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\017_case.json",
+      "source_sha256": "6a30df583532232b8760e5d1722339ffa5d9420f261ccccf1e200fd277e850e4",
+      "file": "run/007_case.json",
+      "sha256": "a70dda50c281e3aac468896a297cbee6f01c101cf3f028dfec58479b7a1ccedd",
+      "prepare_s": 0.0023018330000006415,
+      "first_s": 0.14232048399999897,
+      "cold_s": 0.1446223169999996,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "band": 4,
+      "pair": 1,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\017_case.json",
+      "source_sha256": "6a30df583532232b8760e5d1722339ffa5d9420f261ccccf1e200fd277e850e4",
+      "file": "run/008_case.json",
+      "sha256": "8cdbdb1ff44bf82ea142cf5ccd9b5a718e38bbfc73581c5e1f1b9fb8ba0d49df",
+      "prepare_s": 0.0028164209999914647,
+      "first_s": 0.17972891300000526,
+      "cold_s": 0.18254533399999673,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "band": 4,
+      "pair": 1,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\004_case.json",
+      "source_sha256": "020900fde7a4c19cd73140579b7751593334117bce19411eee34dd680ed4a27d",
+      "file": "run/009_case.json",
+      "sha256": "2fe873f8f4da18ab198d0d53019be0681f3870f7074173945c80693c73e49e45",
+      "prepare_s": 1.1198903980000026,
+      "first_s": 0.0003971599999985642,
+      "cold_s": 1.1202875580000011,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "band": 3,
+      "pair": 1,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\013_case.json",
+      "source_sha256": "7bba9816336c79eb6732bebcc7aebecf2ad18b5a9f40c9416ff7f3bf261917e0",
+      "file": "run/010_case.json",
+      "sha256": "ee333fec489eb953fc3ae5f57d2b25b902d5b5acacaed12b310a17b3e0bf68b6",
+      "prepare_s": 0.003033651000002635,
+      "first_s": 0.23397404800000032,
+      "cold_s": 0.23700769900000296,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "band": 3,
+      "pair": 1,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\003_case.json",
+      "source_sha256": "ddf4ac7f62a5f29320a47bb610f07d4f57f5ffc27d4cccda3a372c695a01913e",
+      "file": "run/011_case.json",
+      "sha256": "879266bb6eef0658558f0d904a66b6865c4febd1654fc628a71d4689ca112f6b",
+      "prepare_s": 0.7262746700000022,
+      "first_s": 0.00037663999999892894,
+      "cold_s": 0.7266513100000012,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "band": 2,
+      "pair": 1,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\009_case.json",
+      "source_sha256": "563284a073bea7c6636107cff7938090bb0869c0b0d441a06d74c5a208b6aef3",
+      "file": "run/012_case.json",
+      "sha256": "4a5ef2b8e317d4f1910c815468680b9f4284aa6427ccc6dcd9e6b30fee5cfd99",
+      "prepare_s": 0.0021218730000001074,
+      "first_s": 0.170888841,
+      "cold_s": 0.17301071400000012,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "band": 2,
+      "pair": 1,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\002_case.json",
+      "source_sha256": "7d756d88c3d56b347dada146dfbdb46a27f1e77e59257118c57cdea3989c7a42",
+      "file": "run/013_case.json",
+      "sha256": "5429ecd37662acbbacfa1e5dfe723172bb2a1ed151a5a1190e3599931d469051",
+      "prepare_s": 1.0583610149999956,
+      "first_s": 0.0006335879999994631,
+      "cold_s": 1.058994602999995,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "band": 1,
+      "pair": 1,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\005_case.json",
+      "source_sha256": "d692cb52cae82dafdaf443188f15cca424dca421392b1e54535cfebb4a7f89a7",
+      "file": "run/014_case.json",
+      "sha256": "4770c9bfad9bec94665ff17309c97983deefa6b171201b80be5d6c48ebe4df7d",
+      "prepare_s": 0.0018118400000020074,
+      "first_s": 0.16275413299999997,
+      "cold_s": 0.16456597300000197,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "band": 1,
+      "pair": 1,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\001_case.json",
+      "source_sha256": "f01c29d4251fd4da676b9e07774bef055c48c7041f8c1c67195df687f427985a",
+      "file": "run/015_case.json",
+      "sha256": "75d7115455c09f1eefc5ec67a57be778e0c782833f44095eb083d538197c3857",
+      "prepare_s": 0.6085122879999929,
+      "first_s": 0.0002771069999951692,
+      "cold_s": 0.6087893949999881,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "band": 1,
+      "pair": 2,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\001_case.json",
+      "source_sha256": "f01c29d4251fd4da676b9e07774bef055c48c7041f8c1c67195df687f427985a",
+      "file": "run/016_case.json",
+      "sha256": "30b28ba29a861b799a66f98400062d41e2ed1fc4571721963271644e64815662",
+      "prepare_s": 0.6535208700000013,
+      "first_s": 0.0003259809999960339,
+      "cold_s": 0.6538468509999973,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "band": 1,
+      "pair": 2,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\005_case.json",
+      "source_sha256": "d692cb52cae82dafdaf443188f15cca424dca421392b1e54535cfebb4a7f89a7",
+      "file": "run/017_case.json",
+      "sha256": "8efe38f57a39baa3553cb29699c2137c3d050fbe54c232973ab7d36ca2a2528a",
+      "prepare_s": 0.0021771890000010785,
+      "first_s": 0.1792324210000018,
+      "cold_s": 0.18140961000000289,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "band": 2,
+      "pair": 2,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\002_case.json",
+      "source_sha256": "7d756d88c3d56b347dada146dfbdb46a27f1e77e59257118c57cdea3989c7a42",
+      "file": "run/018_case.json",
+      "sha256": "fff2a8eb69736cbf34d92ad2844a6744031c41bee4a186f895e992811b068d2b",
+      "prepare_s": 0.9182087949999982,
+      "first_s": 0.00037116900000455644,
+      "cold_s": 0.9185799640000027,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "band": 2,
+      "pair": 2,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\009_case.json",
+      "source_sha256": "563284a073bea7c6636107cff7938090bb0869c0b0d441a06d74c5a208b6aef3",
+      "file": "run/019_case.json",
+      "sha256": "052351e66db5df8060b1c77e9394281393255addc738905e708b75d70aeeb6e3",
+      "prepare_s": 0.002573767000001226,
+      "first_s": 0.14608966600000173,
+      "cold_s": 0.14866343300000295,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "band": 3,
+      "pair": 2,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\003_case.json",
+      "source_sha256": "ddf4ac7f62a5f29320a47bb610f07d4f57f5ffc27d4cccda3a372c695a01913e",
+      "file": "run/020_case.json",
+      "sha256": "619928f79a26a7e6302d1d5e0cdbf53bdecc4f2261fe4aeb4b79753f4bbc2f96",
+      "prepare_s": 0.6184586549999977,
+      "first_s": 0.00027527299999974275,
+      "cold_s": 0.6187339279999975,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "band": 3,
+      "pair": 2,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\013_case.json",
+      "source_sha256": "7bba9816336c79eb6732bebcc7aebecf2ad18b5a9f40c9416ff7f3bf261917e0",
+      "file": "run/021_case.json",
+      "sha256": "c9a829df49ef4ad21ad8a714f7390995084f836070ba47445dd9d96b47eac884",
+      "prepare_s": 0.002375813999989873,
+      "first_s": 0.1688653420000037,
+      "cold_s": 0.17124115599999357,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "band": 4,
+      "pair": 2,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\004_case.json",
+      "source_sha256": "020900fde7a4c19cd73140579b7751593334117bce19411eee34dd680ed4a27d",
+      "file": "run/022_case.json",
+      "sha256": "d84791a45b7aef81bfe911650ee92e1836f0269f90871d86191f6509fa6b5b28",
+      "prepare_s": 0.989003997999987,
+      "first_s": 0.0005005200000027799,
+      "cold_s": 0.9895045179999897,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "band": 4,
+      "pair": 2,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\017_case.json",
+      "source_sha256": "6a30df583532232b8760e5d1722339ffa5d9420f261ccccf1e200fd277e850e4",
+      "file": "run/023_case.json",
+      "sha256": "0a4640309b090ee173b2142f50bdae5eb58edc010925d88d17b1d70704a4871b",
+      "prepare_s": 0.0029401379999853816,
+      "first_s": 0.1482041719999927,
+      "cold_s": 0.15114430999997808,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "band": 4,
+      "pair": 3,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\017_case.json",
+      "source_sha256": "6a30df583532232b8760e5d1722339ffa5d9420f261ccccf1e200fd277e850e4",
+      "file": "run/024_case.json",
+      "sha256": "a6875fa64978a2fdfab9a186ac4ba2026af03ca15f818fcf7c2d5a64b200a5ab",
+      "prepare_s": 0.0020190639999810855,
+      "first_s": 0.16685969399999578,
+      "cold_s": 0.16887875799997687,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3019952154441747e-12,
+          "residual_ratio_with_margin": 2.618717805035888e-08,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "band": 4,
+      "pair": 3,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\004_case.json",
+      "source_sha256": "020900fde7a4c19cd73140579b7751593334117bce19411eee34dd680ed4a27d",
+      "file": "run/025_case.json",
+      "sha256": "cf6cd6bbbd0751e30c3cca8e9f995af04f095f2fc5263dc7153f5d5910778ba8",
+      "prepare_s": 0.9643027659999888,
+      "first_s": 0.00028740700000184916,
+      "cold_s": 0.9645901729999906,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 4.355519178941267e-09,
+          "residual_ratio_with_margin": 0.0008761284981885078,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "band": 3,
+      "pair": 3,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\013_case.json",
+      "source_sha256": "7bba9816336c79eb6732bebcc7aebecf2ad18b5a9f40c9416ff7f3bf261917e0",
+      "file": "run/026_case.json",
+      "sha256": "a30c67e393dffe9f0e2b827ba73833eb657585f97bd41bd7ac43638173f04c08",
+      "prepare_s": 0.0019922510000043303,
+      "first_s": 0.1580474630000026,
+      "cold_s": 0.16003971400000694,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.1205402925566944e-12,
+          "residual_ratio_with_margin": 1.6795449101797672e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "band": 3,
+      "pair": 3,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\003_case.json",
+      "source_sha256": "ddf4ac7f62a5f29320a47bb610f07d4f57f5ffc27d4cccda3a372c695a01913e",
+      "file": "run/027_case.json",
+      "sha256": "4f9a1732fca4a595bb50d1bb6495936ab81b9d4258d7a5e1da18d50c85bbc396",
+      "prepare_s": 0.7291365720000016,
+      "first_s": 0.0003743649999989884,
+      "cold_s": 0.7295109370000006,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.7226102448691906e-09,
+          "residual_ratio_with_margin": 2.6710837420465667e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "band": 2,
+      "pair": 3,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\009_case.json",
+      "source_sha256": "563284a073bea7c6636107cff7938090bb0869c0b0d441a06d74c5a208b6aef3",
+      "file": "run/028_case.json",
+      "sha256": "44a9b783aa3ab4afbbb6e3c3080b2a7d4e6268051a3f7ff0db934aa83e177e2e",
+      "prepare_s": 0.0025126849999992373,
+      "first_s": 0.14750431800000285,
+      "cold_s": 0.1500170030000021,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.4358393449962216e-12,
+          "residual_ratio_with_margin": 1.0916441094567387e-09,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "band": 2,
+      "pair": 3,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\002_case.json",
+      "source_sha256": "7d756d88c3d56b347dada146dfbdb46a27f1e77e59257118c57cdea3989c7a42",
+      "file": "run/029_case.json",
+      "sha256": "66f3bab7d397fe29a4cd023f81df5bf925bba09207019a5aa4d6b4bbfa12b88f",
+      "prepare_s": 0.8757627180000043,
+      "first_s": 0.00027048399999785033,
+      "cold_s": 0.8760332020000021,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 2.2733061829070053e-09,
+          "residual_ratio_with_margin": 1.2102559427872369e-05,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "band": 1,
+      "pair": 3,
+      "kind": "cut",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage1\\005_case.json",
+      "source_sha256": "d692cb52cae82dafdaf443188f15cca424dca421392b1e54535cfebb4a7f89a7",
+      "file": "run/030_case.json",
+      "sha256": "48a9f9dbb541fe8cbdc4d5ca8d2c88e9116082d133dbcd870d3c7b0be7f89a3b",
+      "prepare_s": 0.003018650000001344,
+      "first_s": 0.16553111400000375,
+      "cold_s": 0.1685497640000051,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.3889392542084632e-12,
+          "residual_ratio_with_margin": 2.972673767031408e-10,
+          "passes_main": true,
+          "passes_secondary": true
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "band": 1,
+      "pair": 3,
+      "kind": "glow",
+      "source": "phase2\\experiments\\cold_fast_glow\\stage2\\001_case.json",
+      "source_sha256": "f01c29d4251fd4da676b9e07774bef055c48c7041f8c1c67195df687f427985a",
+      "file": "run/031_case.json",
+      "sha256": "c8499173e01d0ebb43838a321aa8c1ff8219a37800e46808e881865286bd417b",
+      "prepare_s": 0.609250173999996,
+      "first_s": 0.0005728900000008252,
+      "cold_s": 0.6098230639999969,
+      "scores": [
+        {
+          "phase": "first",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        },
+        {
+          "phase": "cached",
+          "max_with_margin": 1.748958236626322e-09,
+          "residual_ratio_with_margin": 2.567596431098377e-06,
+          "passes_main": true,
+          "passes_secondary": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "four repetitions per band are finite observations, not a statistical coverage theorem",
+    "GLoW wins band0 cold and prepared FFT reevaluation in the other recorded cohort",
+    "band5 low-Nt strict failure retained, not used as an infinite cost",
+    "configuration choices were optimized on these same six bands, not independent blind speed tests",
+    "no certified total quadrature/roundoff bound or library optimum claimed"
+  ]
+}

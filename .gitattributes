@@ -1,0 +1,8 @@
+# Keep frozen scientific bytes identical across operating systems.
+* -text whitespace=cr-at-eol
+*.md text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.gz binary
+*.pdf binary
+*.png binary

@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "path": "phase2/reports/residual_first_assessment.md",
+      "sha256": "d7445a6479f77bfe11431ae737bf6853c78ffb3af4e17381782ecab9356ec9fb",
+      "line_count": 195
+    },
+    {
+      "path": "phase2/reports/born_strong_baseline_checkpoint.md",
+      "sha256": "3080ce261eb44e65fec00f853e9cfd44d3de6c9c28d880817bfdfa5f1ec8a3b2",
+      "line_count": 26
+    },
+    {
+      "path": "phase2/reports/gaussian_extension_lemma.md",
+      "sha256": "be513e7a1cf34de1e92f3ef3b284ca2edb1fb43d871bef99f61b46c3d2da94ad",
+      "line_count": 96
+    },
+    {
+      "path": "phase2/reports/cold_fast_glow.md",
+      "sha256": "ecf10f7c4fc06de3dbc41cd64cab0666354add81a3b790c39855955c3e3e9c54",
+      "line_count": 102
+    },
+    {
+      "path": "phase2/reports/glow_tail_audit.md",
+      "sha256": "0c508f116ef8da65015efad84416603ebbfb634763d48661d047e18f240165be",
+      "line_count": 133
+    },
+    {
+      "path": "phase2/reports/final_contribution_decision.md",
+      "sha256": "f5e788ddd8965391e6c85e6e1c8f40719abfd6ce5758cedecd69e4ae60fd6d90",
+      "line_count": 60
+    },
+    {
+      "path": "phase2/revisions/cqg_v2/manuscript_cqg_en.md",
+      "sha256": "fc382e74c617de2d5fcd126fc99def98f54309408135a979e8d34d595d99d20c",
+      "line_count": 705
+    },
+    {
+      "path": "phase2/reports/progress_finiteq.md",
+      "sha256": "bf4761f85020a05c3638614480260bd910c04e20c83c2ffa4bb2da5848160b4f",
+      "line_count": 53
+    },
+    {
+      "path": "phase2/reports/born_baseline.md",
+      "sha256": "a0d852ffe11ccb1699e334478744d4679f8b69a22634a98f258de9bdae14ffe1",
+      "line_count": 191
+    },
+    {
+      "path": "phase2/reports/finiteq_theory.md",
+      "sha256": "4faa7b919cd7a08029f1e63da9bc18bb786552e1642d550c06f47f35422d3d3a",
+      "line_count": 655
+    },
+    {
+      "path": "phase2/experiments/cold_confirmation_v1/analysis.json",
+      "sha256": "09fcc932169ceadf9292ddffeeaaf9f403aed64b6b778963390882a844eb311d",
+      "line_count": 1118
+    },
+    {
+      "path": "phase2/experiments/cold_fast_glow/verification.json",
+      "sha256": "e1e390b1b4e7d0b4cc69c5818960ae84f84d970262b28dd54d04e90b6df0a85c",
+      "line_count": 74
+    },
+    {
+      "path": "phase2/experiments/glow_tail_audit/analysis.json",
+      "sha256": "f4566846ca67b0be6bcd0a8a524263857cebf56c36b28349fe0030a3cf6f86be",
+      "line_count": 3517
+    }
+  ],
+  "note": "Project-relative archival provenance; no private paths or literature full-text copies. Blog numbers refer to stored historical work, not fresh experiments."
+}

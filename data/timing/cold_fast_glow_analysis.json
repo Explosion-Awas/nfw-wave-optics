@@ -1,0 +1,4571 @@
+{
+  "n_cases": 38,
+  "n_native": 28,
+  "n_cut": 10,
+  "n_success": 38,
+  "n_accuracy_pass": 20,
+  "all_full_band_801": true,
+  "selection_metric": "cold=prepare+first, never cached",
+  "records": [
+    {
+      "file": "stage1/000_case.json",
+      "sha256": "c1df1601dcb4d42c1aac4a399d6616950b8d740ed5aead6d8fc1761296937a12",
+      "band": 0,
+      "label": "log_N30000_a9_b6",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.035155809999999,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 4.4685585598945286e-08,
+          "max_with_empirical_margin": 4.468561460581133e-08,
+          "band_residual_relative_l2": 1.937500851634698e-05,
+          "relative_l2_with_empirical_margin": 1.9375194682085784e-05,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 4.4685585598945286e-08,
+          "max_with_empirical_margin": 4.468561460581133e-08,
+          "band_residual_relative_l2": 1.937500851634698e-05,
+          "relative_l2_with_empirical_margin": 1.9375194682085784e-05,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.14884190200000091,
+      "first_s": 0.0006241590000009012,
+      "cold_s": 0.14946606100000182,
+      "cached_s": 0.0003059180000004602,
+      "changed_frequency_probe_s": 0.00029650500000144575,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.11484179700000041,
+      "fourier_s": 0.03396272299999836,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 6,
+      "fft_points": 262144,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 9,
+        "N_below_discard": 6,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.418139496000002,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/001_case.json",
+      "sha256": "c79aef230b0db956b8dc3ad8343859903ece05e31d5252a902e2ba3ba4ea6eab",
+      "band": 0,
+      "label": "interleaved_cut8",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.6261075,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.006478704999999252,
+      "first_s": 0.16872300500000037,
+      "cold_s": 0.17520170999999962,
+      "cached_s": 0.15834510150000014,
+      "changed_frequency_probe_s": 0.17328943000000052,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "stage1/002_case.json",
+      "sha256": "b7898c1663225bc928d45d33cd14a370b245a328e2b198df968f5d8435466608",
+      "band": 0,
+      "label": "log_N60000_a10_b7",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.4456148079999984,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 5.630439656558639e-09,
+          "max_with_empirical_margin": 5.630465933069218e-09,
+          "band_residual_relative_l2": 2.2847766307318117e-06,
+          "relative_l2_with_empirical_margin": 2.2849627932890616e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 5.630439656558639e-09,
+          "max_with_empirical_margin": 5.630465933069218e-09,
+          "band_residual_relative_l2": 2.2847766307318117e-06,
+          "relative_l2_with_empirical_margin": 2.2849627932890616e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.31294639900001187,
+      "first_s": 0.0004942999999997255,
+      "cold_s": 0.3134406990000116,
+      "cached_s": 0.00023952499999779775,
+      "changed_frequency_probe_s": 0.00022783300000384088,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.2029568060000031,
+      "fourier_s": 0.10995774100000233,
+      "Nt": 60000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 7,
+      "fft_points": 1048576,
+      "effective_time_precision": {
+        "Nt": 60000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 10,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8552253719999996,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/003_case.json",
+      "sha256": "ce2c4a8e29cc651a861814b85a0e9e7e3ce5e0cc5350f494b6c5b40b426e72cf",
+      "band": 0,
+      "label": "oversampling_N30000_a10_b8_over10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.458916984999995,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.0174796497636285e-08,
+          "max_with_empirical_margin": 1.0174829708345752e-08,
+          "band_residual_relative_l2": 1.0929674247971755e-05,
+          "relative_l2_with_empirical_margin": 1.0929860412138357e-05,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.0174796497636285e-08,
+          "max_with_empirical_margin": 1.0174829708345752e-08,
+          "band_residual_relative_l2": 1.0929674247971755e-05,
+          "relative_l2_with_empirical_margin": 1.0929860412138357e-05,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.3414679910000018,
+      "first_s": 0.00040749000000062097,
+      "cold_s": 0.3418754810000024,
+      "cached_s": 0.00023456950000166898,
+      "changed_frequency_probe_s": 0.00021279199999924003,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.11244410700000174,
+      "fourier_s": 0.2289073079999966,
+      "Nt": 30000,
+      "sampling": "oversampling",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 2097152,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "oversampling",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 19.133857088029274,
+        "oversampling_tmax": 109.53385708802928,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8305797100000021,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/004_case.json",
+      "sha256": "6245b52f8a91092481d29b800d89f437bdf040ddf5e47c1538706dd5d783c22c",
+      "band": 1,
+      "label": "log_N30000_a9_b6",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.2301013969999985,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.041815718209043e-08,
+          "max_with_empirical_margin": 3.0418176510521936e-08,
+          "band_residual_relative_l2": 4.394863515077165e-05,
+          "relative_l2_with_empirical_margin": 4.39489307716317e-05,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.041815718209043e-08,
+          "max_with_empirical_margin": 3.0418176510521936e-08,
+          "band_residual_relative_l2": 4.394863515077165e-05,
+          "relative_l2_with_empirical_margin": 4.39489307716317e-05,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.10795592900000628,
+      "first_s": 0.0002757139999971514,
+      "cold_s": 0.10823164300000343,
+      "cached_s": 0.00018866599999967093,
+      "changed_frequency_probe_s": 0.00021780299999818453,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.09002557499999853,
+      "fourier_s": 0.017896068000005982,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 6,
+      "fft_points": 262144,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.008483754512635378,
+        "wmax": 0.38267148014440433,
+        "window_transition": 0.2,
+        "smallest_tau_max": 774.0756461742249,
+        "N_above_discard": 9,
+        "N_below_discard": 6,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8717676099999991,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/005_case.json",
+      "sha256": "d692cb52cae82dafdaf443188f15cca424dca421392b1e54535cfebb4a7f89a7",
+      "band": 1,
+      "label": "interleaved_cut8",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.265332489000002,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.5888923204835582e-15,
+          "max_with_empirical_margin": 1.3889392542084632e-12,
+          "band_residual_relative_l2": 1.659508221224748e-12,
+          "relative_l2_with_empirical_margin": 2.9726737670313985e-10,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.5888923204835582e-15,
+          "max_with_empirical_margin": 1.3889392542084632e-12,
+          "band_residual_relative_l2": 1.659508221224748e-12,
+          "relative_l2_with_empirical_margin": 2.9726737670313985e-10,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.002300107000003493,
+      "first_s": 0.14224924000000527,
+      "cold_s": 0.14454934700000877,
+      "cached_s": 0.14487736850000132,
+      "changed_frequency_probe_s": 0.11641449199999698,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "stage1/006_case.json",
+      "sha256": "d48ee26257ba603b29bb81d6f1f017a92319640ee84ffb34d5543eee584f5648",
+      "band": 1,
+      "label": "log_N60000_a10_b7",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.222272154999999,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.1032154036310989e-08,
+          "max_with_empirical_margin": 1.1032173480185552e-08,
+          "band_residual_relative_l2": 1.2432845964243402e-05,
+          "relative_l2_with_empirical_margin": 1.2433141575787131e-05,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.1032154036310989e-08,
+          "max_with_empirical_margin": 1.1032173480185552e-08,
+          "band_residual_relative_l2": 1.2432845964243402e-05,
+          "relative_l2_with_empirical_margin": 1.2433141575787131e-05,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.2624126740000037,
+      "first_s": 0.0002563170000016157,
+      "cold_s": 0.2626689910000053,
+      "cached_s": 0.00023221949999907565,
+      "changed_frequency_probe_s": 0.0002534309999973061,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.17600191700000067,
+      "fourier_s": 0.08637088900000123,
+      "Nt": 60000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 7,
+      "fft_points": 1048576,
+      "effective_time_precision": {
+        "Nt": 60000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.008483754512635378,
+        "wmax": 0.38267148014440433,
+        "window_transition": 0.2,
+        "smallest_tau_max": 774.0756461742249,
+        "N_above_discard": 10,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.7701622959999952,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/007_case.json",
+      "sha256": "378d9ffe230362351ccf8472d1475c43282ee4b29075488d5fcb50bacfb5213f",
+      "band": 1,
+      "label": "oversampling_N30000_a10_b8_over10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.515146392999995,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.76617521055815e-07,
+          "max_with_empirical_margin": 1.766175463837542e-07,
+          "band_residual_relative_l2": 0.00020951666824331434,
+          "relative_l2_with_empirical_margin": 0.0002095169639131176,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.76617521055815e-07,
+          "max_with_empirical_margin": 1.766175463837542e-07,
+          "band_residual_relative_l2": 0.00020951666824331434,
+          "relative_l2_with_empirical_margin": 0.0002095169639131176,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.34415774499999685,
+      "first_s": 0.00048345700000140823,
+      "cold_s": 0.34464120199999826,
+      "cached_s": 0.00024981899999687585,
+      "changed_frequency_probe_s": 0.0001954190000006406,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.09932565900000156,
+      "fourier_s": 0.2447950239999983,
+      "Nt": 30000,
+      "sampling": "oversampling",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 2097152,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "oversampling",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 276.2378230871124,
+        "oversampling_tmax": 497.83782308711244,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.008483754512635378,
+        "wmax": 0.38267148014440433,
+        "window_transition": 0.2,
+        "smallest_tau_max": 774.0756461742249,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.9265198860000012,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/008_case.json",
+      "sha256": "f64075c0bf9af53d640a038288d3075e6f437f4fdf443946103a54308b2747a9",
+      "band": 2,
+      "label": "log_N30000_a9_b6",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.3699530290000013,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.151144629645002e-07,
+          "max_with_empirical_margin": 6.151144928864237e-07,
+          "band_residual_relative_l2": 0.0009605745745222131,
+          "relative_l2_with_empirical_margin": 0.000960575660995041,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.151144629645002e-07,
+          "max_with_empirical_margin": 6.151144928864237e-07,
+          "band_residual_relative_l2": 0.0009605745745222131,
+          "relative_l2_with_empirical_margin": 0.000960575660995041,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.1391405109999937,
+      "first_s": 0.00030306699999727016,
+      "cold_s": 0.13944357799999096,
+      "cached_s": 0.0001748384999977759,
+      "changed_frequency_probe_s": 0.0001680849999985412,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.09421338700000348,
+      "fourier_s": 0.04489340899999661,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 6,
+      "fft_points": 524288,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0031144781144781144,
+        "wmax": 0.3939393939393939,
+        "window_transition": 0.2,
+        "smallest_tau_max": 3546.5660478360824,
+        "N_above_discard": 9,
+        "N_below_discard": 6,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8535472190000064,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/009_case.json",
+      "sha256": "563284a073bea7c6636107cff7938090bb0869c0b0d441a06d74c5a208b6aef3",
+      "band": 2,
+      "label": "interleaved_cut8",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.398547814000004,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.6163921187325935e-15,
+          "max_with_empirical_margin": 1.4358393449962216e-12,
+          "band_residual_relative_l2": 6.2139180601991114e-12,
+          "relative_l2_with_empirical_margin": 1.0916441094567374e-09,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.6163921187325935e-15,
+          "max_with_empirical_margin": 1.4358393449962216e-12,
+          "band_residual_relative_l2": 6.2139180601991114e-12,
+          "relative_l2_with_empirical_margin": 1.0916441094567374e-09,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.0023327959999974723,
+      "first_s": 0.17502070600000508,
+      "cold_s": 0.17735350200000255,
+      "cached_s": 0.14070293599999673,
+      "changed_frequency_probe_s": 0.14754489599999943,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "stage1/010_case.json",
+      "sha256": "56f972bd7946e5e6dca0a686e6056171d61648636d6f994b846aa9e95dd88af4",
+      "band": 2,
+      "label": "log_N60000_a10_b7",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.6823909379999975,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.213452130444112e-08,
+          "max_with_empirical_margin": 3.21345451688053e-08,
+          "band_residual_relative_l2": 7.072138000041018e-05,
+          "relative_l2_with_empirical_margin": 7.072246550736469e-05,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.213452130444112e-08,
+          "max_with_empirical_margin": 3.21345451688053e-08,
+          "band_residual_relative_l2": 7.072138000041018e-05,
+          "relative_l2_with_empirical_margin": 7.072246550736469e-05,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.41423168699999735,
+      "first_s": 0.00026187799999632944,
+      "cold_s": 0.4144935649999937,
+      "cached_s": 0.00017720400000342806,
+      "changed_frequency_probe_s": 0.0002179119999965451,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.1898794259999974,
+      "fourier_s": 0.22427614300000442,
+      "Nt": 60000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 7,
+      "fft_points": 2097152,
+      "effective_time_precision": {
+        "Nt": 60000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0031144781144781144,
+        "wmax": 0.3939393939393939,
+        "window_transition": 0.2,
+        "smallest_tau_max": 3546.5660478360824,
+        "N_above_discard": 10,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.9492396360000015,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/011_case.json",
+      "sha256": "f038d92cb11d9ed2b7ad9bfca026ced79886e902f8b41cdc2e05bf8bd9eddd63",
+      "band": 2,
+      "label": "oversampling_N30000_a10_b8_over10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.651846589999998,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.0864895983525346e-07,
+          "max_with_empirical_margin": 3.0864899462238494e-07,
+          "band_residual_relative_l2": 0.0009775593420017058,
+          "relative_l2_with_empirical_margin": 0.0009775604284929698,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.0864895983525346e-07,
+          "max_with_empirical_margin": 3.0864899462238494e-07,
+          "band_residual_relative_l2": 0.0009775593420017058,
+          "relative_l2_with_empirical_margin": 0.0009775604284929698,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.562455946,
+      "first_s": 0.00035093099999983224,
+      "cold_s": 0.5628068769999999,
+      "cached_s": 0.0002055484999985424,
+      "changed_frequency_probe_s": 0.0002316489999998339,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.09118114300000002,
+      "fourier_s": 0.47124475500000074,
+      "Nt": 30000,
+      "sampling": "oversampling",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 4194304,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "oversampling",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 1535.6830239180413,
+        "oversampling_tmax": 2010.883023918041,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0031144781144781144,
+        "wmax": 0.3939393939393939,
+        "window_transition": 0.2,
+        "smallest_tau_max": 3546.5660478360824,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8033600210000031,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/012_case.json",
+      "sha256": "29d9a46ea37e9557d9c45597aebb9a0f735a3942c01acd86d8ace12849b474ff",
+      "band": 3,
+      "label": "log_N30000_a9_b6",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.4100668610000042,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 4.1483256344509755e-07,
+          "max_with_empirical_margin": 4.148325942482683e-07,
+          "band_residual_relative_l2": 0.0015719604698552062,
+          "relative_l2_with_empirical_margin": 0.0015719621409735652,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 4.1483256344509755e-07,
+          "max_with_empirical_margin": 4.148325942482683e-07,
+          "band_residual_relative_l2": 0.0015719604698552062,
+          "relative_l2_with_empirical_margin": 0.0015719621409735652,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.1189340159999972,
+      "first_s": 0.0003259320000026378,
+      "cold_s": 0.11925994799999984,
+      "cached_s": 0.0002314239999989809,
+      "changed_frequency_probe_s": 0.00020873500000107015,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.1001628010000033,
+      "fourier_s": 0.018738781999999787,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 6,
+      "fft_points": 262144,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0013349514563106798,
+        "wmax": 0.05501618122977346,
+        "window_transition": 0.2,
+        "smallest_tau_max": 15315.31704795111,
+        "N_above_discard": 9,
+        "N_below_discard": 6,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8950809799999959,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/013_case.json",
+      "sha256": "7bba9816336c79eb6732bebcc7aebecf2ad18b5a9f40c9416ff7f3bf261917e0",
+      "band": 3,
+      "label": "interleaved_cut8",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.2508235669999976,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.681020201170074e-15,
+          "max_with_empirical_margin": 1.1205402925566944e-12,
+          "band_residual_relative_l2": 1.1049360226305651e-11,
+          "relative_l2_with_empirical_margin": 1.6795449101797405e-09,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.681020201170074e-15,
+          "max_with_empirical_margin": 1.1205402925566944e-12,
+          "band_residual_relative_l2": 1.1049360226305651e-11,
+          "relative_l2_with_empirical_margin": 1.6795449101797405e-09,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.002415931999998122,
+      "first_s": 0.15383765600000032,
+      "cold_s": 0.15625358799999844,
+      "cached_s": 0.1437251260000032,
+      "changed_frequency_probe_s": 0.12876580200000376,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "stage1/014_case.json",
+      "sha256": "14141e00b1d0bb49a24c6631798c2d629554d668594ff0931b31382f223593ee",
+      "band": 3,
+      "label": "log_N60000_a10_b7",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.3807285310000026,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1513410951582175e-08,
+          "max_with_empirical_margin": 3.151344082354009e-08,
+          "band_residual_relative_l2": 0.00015022402486253062,
+          "relative_l2_with_empirical_margin": 0.00015022569360872867,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1513410951582175e-08,
+          "max_with_empirical_margin": 3.151344082354009e-08,
+          "band_residual_relative_l2": 0.00015022402486253062,
+          "relative_l2_with_empirical_margin": 0.00015022569360872867,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.2738826460000041,
+      "first_s": 0.0004971639999951094,
+      "cold_s": 0.2743798099999992,
+      "cached_s": 0.00032741950000314546,
+      "changed_frequency_probe_s": 0.00018118100000208415,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.1868131230000003,
+      "fourier_s": 0.08702349400000031,
+      "Nt": 60000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 7,
+      "fft_points": 1048576,
+      "effective_time_precision": {
+        "Nt": 60000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0013349514563106798,
+        "wmax": 0.05501618122977346,
+        "window_transition": 0.2,
+        "smallest_tau_max": 15315.31704795111,
+        "N_above_discard": 10,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8388946510000039,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/015_case.json",
+      "sha256": "78e083e8ee7e083338f77c9dbcc2e7aa5328562aca4de6a78c7d5cb1fdec8bde",
+      "band": 3,
+      "label": "oversampling_N30000_a10_b8_over10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.350863997999994,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.922844119940514e-07,
+          "max_with_empirical_margin": 2.922844384667025e-07,
+          "band_residual_relative_l2": 0.0023641531088983685,
+          "relative_l2_with_empirical_margin": 0.002364154781338497,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.922844119940514e-07,
+          "max_with_empirical_margin": 2.922844384667025e-07,
+          "band_residual_relative_l2": 0.0023641531088983685,
+          "relative_l2_with_empirical_margin": 0.002364154781338497,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.31226923799999895,
+      "first_s": 0.00027816899999777434,
+      "cold_s": 0.3125474069999967,
+      "cached_s": 0.000180655500003013,
+      "changed_frequency_probe_s": 0.00018706200000906392,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.10190715299999908,
+      "fourier_s": 0.2103154050000029,
+      "Nt": 30000,
+      "sampling": "oversampling",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 2097152,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "oversampling",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 7163.258523975555,
+        "oversampling_tmax": 8152.058523975555,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0013349514563106798,
+        "wmax": 0.05501618122977346,
+        "window_transition": 0.2,
+        "smallest_tau_max": 15315.31704795111,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.7770494600000006,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/016_case.json",
+      "sha256": "1c0d9001e8d22bee4200b8602124b09b45e6f4050afbeb8f90293dd23f68bdba",
+      "band": 4,
+      "label": "log_N30000_a9_b6",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.3312324960000126,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.454071820959464e-07,
+          "max_with_empirical_margin": 3.454072142496282e-07,
+          "band_residual_relative_l2": 0.027504777724105294,
+          "relative_l2_with_empirical_margin": 0.02750480420034071,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.454071820959464e-07,
+          "max_with_empirical_margin": 3.454072142496282e-07,
+          "band_residual_relative_l2": 0.027504777724105294,
+          "relative_l2_with_empirical_margin": 0.02750480420034071,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.15673436799998797,
+      "first_s": 0.0002580910000062886,
+      "cold_s": 0.15699245899999426,
+      "cached_s": 0.00017601599999750306,
+      "changed_frequency_probe_s": 0.00016935899999737103,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.10084636199999863,
+      "fourier_s": 0.055831978000000504,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 6,
+      "fft_points": 1048576,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0055880787653006915,
+        "wmax": 0.1202767429483768,
+        "window_transition": 0.2,
+        "smallest_tau_max": 35365.240510659336,
+        "N_above_discard": 9,
+        "N_below_discard": 6,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8807625419999994,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/017_case.json",
+      "sha256": "6a30df583532232b8760e5d1722339ffa5d9420f261ccccf1e200fd277e850e4",
+      "band": 4,
+      "label": "interleaved_cut8",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.3230290009999948,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 5.754716760782786e-15,
+          "max_with_empirical_margin": 1.3019952154441747e-12,
+          "band_residual_relative_l2": 4.196721426474195e-10,
+          "relative_l2_with_empirical_margin": 2.6187178050359237e-08,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 5.754716760782786e-15,
+          "max_with_empirical_margin": 1.3019952154441747e-12,
+          "band_residual_relative_l2": 4.196721426474195e-10,
+          "relative_l2_with_empirical_margin": 2.6187178050359237e-08,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.0017739000000034366,
+      "first_s": 0.13494383300000834,
+      "cold_s": 0.13671773300001178,
+      "cached_s": 0.1481100024999975,
+      "changed_frequency_probe_s": 0.11839789200000439,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "stage1/018_case.json",
+      "sha256": "3f4b0bdb2fd0b114d5c64c1022d9da26f11106cc99a1d8b6d8abc06a5d141d09",
+      "band": 4,
+      "label": "log_N60000_a10_b7",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.5923902400000003,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.5989001454780426e-08,
+          "max_with_empirical_margin": 2.5989033946748974e-08,
+          "band_residual_relative_l2": 0.00384511382396972,
+          "relative_l2_with_empirical_margin": 0.0038451396905546096,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.5989001454780426e-08,
+          "max_with_empirical_margin": 2.5989033946748974e-08,
+          "band_residual_relative_l2": 0.00384511382396972,
+          "relative_l2_with_empirical_margin": 0.0038451396905546096,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.43785345399999187,
+      "first_s": 0.0003510599999998476,
+      "cold_s": 0.4382045139999917,
+      "cached_s": 0.00017981299999547673,
+      "changed_frequency_probe_s": 0.00017220400000894642,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.1874464459999956,
+      "fourier_s": 0.2503756269999968,
+      "Nt": 60000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 7,
+      "fft_points": 4194304,
+      "effective_time_precision": {
+        "Nt": 60000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0055880787653006915,
+        "wmax": 0.1202767429483768,
+        "window_transition": 0.2,
+        "smallest_tau_max": 35365.240510659336,
+        "N_above_discard": 10,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8165595749999994,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/019_case.json",
+      "sha256": "f16f10a00a90dd6c8f1f767673eba0cbc5d4f51e2f1910a3800b72b4299e2c79",
+      "band": 4,
+      "label": "oversampling_N30000_a10_b8_over10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.8374794429999923,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.2122220805102855e-06,
+          "max_with_empirical_margin": 1.212222106454062e-06,
+          "band_residual_relative_l2": 0.09127162276841735,
+          "relative_l2_with_empirical_margin": 0.09127165088776533,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.2122220805102855e-06,
+          "max_with_empirical_margin": 1.212222106454062e-06,
+          "band_residual_relative_l2": 0.09127162276841735,
+          "relative_l2_with_empirical_margin": 0.09127165088776533,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.6045578510000098,
+      "first_s": 0.00031341699998677086,
+      "cold_s": 0.6048712679999966,
+      "cached_s": 0.00019967200000081675,
+      "changed_frequency_probe_s": 0.00026809999999954925,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.09268012600000475,
+      "fourier_s": 0.5117624210000002,
+      "Nt": 30000,
+      "sampling": "oversampling",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 8388608,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "oversampling",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 16931.02025532967,
+        "oversampling_tmax": 18434.220255329667,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0055880787653006915,
+        "wmax": 0.1202767429483768,
+        "window_transition": 0.2,
+        "smallest_tau_max": 35365.240510659336,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.830591302000002,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/020_case.json",
+      "sha256": "109c24feda9f0a00e93f72805bb73565e5d48aaf674e7dd32b09c18d3be35713",
+      "band": 5,
+      "label": "log_N30000_a10_b10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.7489839029999956,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.7630983961697475e-09,
+          "max_with_empirical_margin": 6.763124754180949e-09,
+          "band_residual_relative_l2": 0.16256305200488275,
+          "relative_l2_with_empirical_margin": 0.16256690391124873,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.7630983961697475e-09,
+          "max_with_empirical_margin": 6.763124754180949e-09,
+          "band_residual_relative_l2": 0.16256305200488275,
+          "relative_l2_with_empirical_margin": 0.16256690391124873,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.6445037999999954,
+      "first_s": 0.0004287009999899283,
+      "cold_s": 0.6449325009999853,
+      "cached_s": 0.0002584105000025261,
+      "changed_frequency_probe_s": 0.00020517800000163788,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.10400653899999668,
+      "fourier_s": 0.5404369639999942,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 10,
+      "fft_points": 8388608,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.01645925331192292,
+        "wmax": 0.09474106784423927,
+        "window_transition": 0.2,
+        "smallest_tau_max": 62057.08877810444,
+        "N_above_discard": 10,
+        "N_below_discard": 10,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.7102291369999989,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/021_case.json",
+      "sha256": "68f8c72904db025f6c8354b9859c7b45ecce0d0f1c2189b2eb2530696289e698",
+      "band": 5,
+      "label": "interleaved_cut8",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.421189862999995,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 7.815046354639736e-15,
+          "max_with_empirical_margin": 1.4032164552800361e-12,
+          "band_residual_relative_l2": 6.666142343775722e-08,
+          "relative_l2_with_empirical_margin": 3.3799497789678207e-06,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 7.815046354639736e-15,
+          "max_with_empirical_margin": 1.4032164552800361e-12,
+          "band_residual_relative_l2": 6.666142343775722e-08,
+          "relative_l2_with_empirical_margin": 3.3799497789678207e-06,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.0020583709999897337,
+      "first_s": 0.12852796899998964,
+      "cold_s": 0.13058633999997937,
+      "cached_s": 0.11698114050000896,
+      "changed_frequency_probe_s": 0.11452137999999934,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "stage1/022_case.json",
+      "sha256": "15f3a163a44bb6991f69a2ecb0199bd4842d7f5b2e09c603167e14fa577ac2dd",
+      "band": 5,
+      "label": "log_N60000_a10_b10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.8463703479999936,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.6454511666463356e-09,
+          "max_with_empirical_margin": 1.6454761511497777e-09,
+          "band_residual_relative_l2": 0.03851819101500877,
+          "relative_l2_with_empirical_margin": 0.03852163192500869,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.6454511666463356e-09,
+          "max_with_empirical_margin": 1.6454761511497777e-09,
+          "band_residual_relative_l2": 0.03851819101500877,
+          "relative_l2_with_empirical_margin": 0.03852163192500869,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.8821319219999992,
+      "first_s": 0.0003228660000047512,
+      "cold_s": 0.882454788000004,
+      "cached_s": 0.00019748249999196332,
+      "changed_frequency_probe_s": 0.00026344100000130766,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.18678581200001076,
+      "fourier_s": 0.6953081359999942,
+      "Nt": 60000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 10,
+      "fft_points": 8388608,
+      "effective_time_precision": {
+        "Nt": 60000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.01645925331192292,
+        "wmax": 0.09474106784423927,
+        "window_transition": 0.2,
+        "smallest_tau_max": 62057.08877810444,
+        "N_above_discard": 10,
+        "N_below_discard": 10,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.7324483969999989,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage1/023_case.json",
+      "sha256": "15f6c69426a745b68e0dfde6aee6e1ef0f83c7420d33c0c7926facad55795797",
+      "band": 5,
+      "label": "oversampling_N30000_a10_b10_over10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.8542706589999938,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.819580909311059e-08,
+          "max_with_empirical_margin": 3.819583458122501e-08,
+          "band_residual_relative_l2": 0.4407868041982402,
+          "relative_l2_with_empirical_margin": 0.44079157794006313,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.819580909311059e-08,
+          "max_with_empirical_margin": 3.819583458122501e-08,
+          "band_residual_relative_l2": 0.4407868041982402,
+          "relative_l2_with_empirical_margin": 0.44079157794006313,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.6505327499999964,
+      "first_s": 0.00031242600000780385,
+      "cold_s": 0.6508451760000042,
+      "cached_s": 0.00020057850000654298,
+      "changed_frequency_probe_s": 0.00017127199998867582,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.10377409499999146,
+      "fourier_s": 0.5467271740000115,
+      "Nt": 30000,
+      "sampling": "oversampling",
+      "fft_above": 10,
+      "fft_below": 10,
+      "fft_points": 8388608,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "oversampling",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 30032.144389052217,
+        "oversampling_tmax": 32024.94438905222,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.01645925331192292,
+        "wmax": 0.09474106784423927,
+        "window_transition": 0.2,
+        "smallest_tau_max": 62057.08877810444,
+        "N_above_discard": 10,
+        "N_below_discard": 10,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.8626307339999926,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage2/000_case.json",
+      "sha256": "7213cf58509cf85eed34f5d7857a42283ee385da2674421398077637b9098285",
+      "band": 0,
+      "label": "log_N30000_a9_b7",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.134681778000015,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.14266031599996154,
+      "first_s": 0.00046721499998625404,
+      "cold_s": 0.1431275309999478,
+      "cached_s": 0.0003991234999887183,
+      "changed_frequency_probe_s": 0.0003470429999765656,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.09394370199999003,
+      "fourier_s": 0.04868004299999029,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 7,
+      "fft_points": 524288,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 9,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.4550989199999833,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage2/001_case.json",
+      "sha256": "f01c29d4251fd4da676b9e07774bef055c48c7041f8c1c67195df687f427985a",
+      "band": 1,
+      "label": "log_N120000_a10_b8",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.3695532920000346,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.7489391628530081e-09,
+          "max_with_empirical_margin": 1.748958236626322e-09,
+          "band_residual_relative_l2": 2.5673008224709823e-06,
+          "relative_l2_with_empirical_margin": 2.567596431098378e-06,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 1.7489391628530081e-09,
+          "max_with_empirical_margin": 1.748958236626322e-09,
+          "band_residual_relative_l2": 2.5673008224709823e-06,
+          "relative_l2_with_empirical_margin": 2.567596431098378e-06,
+          "residual_norm": 0.0004687405879744413,
+          "reference_uncertainty_norm": 1.3856340604089381e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.6991183800000726,
+      "first_s": 0.0003144290000136607,
+      "cold_s": 0.6994328090000863,
+      "cached_s": 0.00018418700003053345,
+      "changed_frequency_probe_s": 0.0002366090000123222,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.421476250000012,
+      "fourier_s": 0.27758551000005127,
+      "Nt": 120000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 2097152,
+      "effective_time_precision": {
+        "Nt": 120000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.008483754512635378,
+        "wmax": 0.38267148014440433,
+        "window_transition": 0.2,
+        "smallest_tau_max": 774.0756461742249,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.065354536000001,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage2/002_case.json",
+      "sha256": "7d756d88c3d56b347dada146dfbdb46a27f1e77e59257118c57cdea3989c7a42",
+      "band": 2,
+      "label": "log_N120000_a10_b8",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.6938180779999925,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.2732677871217153e-09,
+          "max_with_empirical_margin": 2.2733061829070053e-09,
+          "band_residual_relative_l2": 1.2101473984545674e-05,
+          "relative_l2_with_empirical_margin": 1.2102559427872369e-05,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.2732677871217153e-09,
+          "max_with_empirical_margin": 2.2733061829070053e-09,
+          "band_residual_relative_l2": 1.2101473984545674e-05,
+          "relative_l2_with_empirical_margin": 1.2102559427872369e-05,
+          "residual_norm": 0.00023119644155631414,
+          "reference_uncertainty_norm": 2.5094759753472317e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.9652628419999019,
+      "first_s": 0.000320230999989235,
+      "cold_s": 0.9655830729998911,
+      "cached_s": 0.00018880149997357876,
+      "changed_frequency_probe_s": 0.00018098099997132522,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.4064917259999561,
+      "fourier_s": 0.5587331829999584,
+      "Nt": 120000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 4194304,
+      "effective_time_precision": {
+        "Nt": 120000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0031144781144781144,
+        "wmax": 0.3939393939393939,
+        "window_transition": 0.2,
+        "smallest_tau_max": 3546.5660478360824,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.0700901970000132,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage2/003_case.json",
+      "sha256": "ddf4ac7f62a5f29320a47bb610f07d4f57f5ffc27d4cccda3a372c695a01913e",
+      "band": 3,
+      "label": "log_N120000_a10_b8",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.3904427820000365,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.722578741567837e-09,
+          "max_with_empirical_margin": 2.7226102448691906e-09,
+          "band_residual_relative_l2": 2.6709168880351602e-05,
+          "relative_l2_with_empirical_margin": 2.6710837420465664e-05,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 2.722578741567837e-09,
+          "max_with_empirical_margin": 2.7226102448691906e-09,
+          "band_residual_relative_l2": 2.6709168880351602e-05,
+          "relative_l2_with_empirical_margin": 2.6710837420465664e-05,
+          "residual_norm": 9.00783485016621e-05,
+          "reference_uncertainty_norm": 1.5029532336975013e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.7403370799999607,
+      "first_s": 0.000288238999985424,
+      "cold_s": 0.7406253189999461,
+      "cached_s": 0.00018346049998285707,
+      "changed_frequency_probe_s": 0.0002002780000225357,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.4490938609999944,
+      "fourier_s": 0.2912115569999969,
+      "Nt": 120000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 2097152,
+      "effective_time_precision": {
+        "Nt": 120000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0013349514563106798,
+        "wmax": 0.05501618122977346,
+        "window_transition": 0.2,
+        "smallest_tau_max": 15315.31704795111,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.136506215000054,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage2/004_case.json",
+      "sha256": "020900fde7a4c19cd73140579b7751593334117bce19411eee34dd680ed4a27d",
+      "band": 4,
+      "label": "log_N120000_a10_b8",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 4.385427207000021,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 4.355480110710921e-09,
+          "max_with_empirical_margin": 4.355519178941267e-09,
+          "band_residual_relative_l2": 0.000876102708107629,
+          "relative_l2_with_empirical_margin": 0.0008761284981885075,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 4.355480110710921e-09,
+          "max_with_empirical_margin": 4.355519178941267e-09,
+          "band_residual_relative_l2": 0.000876102708107629,
+          "relative_l2_with_empirical_margin": 0.0008761284981885075,
+          "residual_norm": 5.542193525999416e-06,
+          "reference_uncertainty_norm": 1.4280850068312052e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 1.2927704330000438,
+      "first_s": 0.00039508600002591265,
+      "cold_s": 1.2931655190000697,
+      "cached_s": 0.00023936400000934555,
+      "changed_frequency_probe_s": 0.00022145899998804452,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.4709091480000325,
+      "fourier_s": 0.8218040040000005,
+      "Nt": 120000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 8,
+      "fft_points": 8388608,
+      "effective_time_precision": {
+        "Nt": 120000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.0055880787653006915,
+        "wmax": 0.1202767429483768,
+        "window_transition": 0.2,
+        "smallest_tau_max": 35365.240510659336,
+        "N_above_discard": 10,
+        "N_below_discard": 8,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.089217863999977,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "stage2/005_case.json",
+      "sha256": "d0731c59ab1d61f691e73da3816ee54dc5dda5828e1731656f6c2d4b9ce15153",
+      "band": 5,
+      "label": "log_N120000_a10_b10",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 4.072691426999995,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": false,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 5.063011235310454e-10,
+          "max_with_empirical_margin": 5.063262856414107e-10,
+          "band_residual_relative_l2": 0.010041227281678212,
+          "relative_l2_with_empirical_margin": 0.010044573839292081,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 5.063011235310454e-10,
+          "max_with_empirical_margin": 5.063262856414107e-10,
+          "band_residual_relative_l2": 0.010041227281678212,
+          "relative_l2_with_empirical_margin": 0.010044573839292081,
+          "residual_norm": 2.4140493132384296e-08,
+          "reference_uncertainty_norm": 7.9984144449891e-14,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": false,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 1.2833791540000448,
+      "first_s": 0.0007378600000151891,
+      "cold_s": 1.28411701400006,
+      "cached_s": 0.0005839419999631446,
+      "changed_frequency_probe_s": 0.0004090630000064266,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.47231905299997834,
+      "fourier_s": 0.8110174480000296,
+      "Nt": 120000,
+      "sampling": "log",
+      "fft_above": 10,
+      "fft_below": 10,
+      "fft_points": 8388608,
+      "effective_time_precision": {
+        "Nt": 120000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.01645925331192292,
+        "wmax": 0.09474106784423927,
+        "window_transition": 0.2,
+        "smallest_tau_max": 62057.08877810444,
+        "N_above_discard": 10,
+        "N_below_discard": 10,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 0.9923687209999912,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "retests/000_case.json",
+      "sha256": "ea2fb8dd39a0bec025b0d42e0ad921af9601cf703cc82e873687a780ba0eda02",
+      "band": 0,
+      "label": "paired_0_native",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.5295546460000082,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.16506518099993173,
+      "first_s": 0.0005090060000156882,
+      "cold_s": 0.16557418699994741,
+      "cached_s": 0.00032707349998872814,
+      "changed_frequency_probe_s": 0.00024876200001244797,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.1063650919999759,
+      "fourier_s": 0.05865622399994663,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 7,
+      "fft_points": 524288,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 9,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.6068264490000388,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "retests/001_case.json",
+      "sha256": "636e68c770d116d4817cb2878c88e6c2c0da22975b7d7e0263167fd0bbc7415c",
+      "band": 0,
+      "label": "paired_0_cut",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.22552989899998,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.008858705000022837,
+      "first_s": 0.20605323500001305,
+      "cold_s": 0.21491194000003588,
+      "cached_s": 0.19025457900002607,
+      "changed_frequency_probe_s": 0.152118124000026,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "retests/002_case.json",
+      "sha256": "829cbc64971adf7fc5a5a958327df2520c7188862ef26a9fa05d96c519043219",
+      "band": 0,
+      "label": "paired_1_cut",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.009815763000006,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.0026731000000381755,
+      "first_s": 0.1863921130000108,
+      "cold_s": 0.18906521300004897,
+      "cached_s": 0.19327194500002065,
+      "changed_frequency_probe_s": 0.1702562520000015,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "retests/003_case.json",
+      "sha256": "9976678b7634014c405817311594a7dfba82fe9289e3f1a5cec0b85090ede08c",
+      "band": 0,
+      "label": "paired_1_native",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 2.9207166180000286,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.1656281079999644,
+      "first_s": 0.0002939689999834627,
+      "cold_s": 0.16592207699994788,
+      "cached_s": 0.00021651450001058947,
+      "changed_frequency_probe_s": 0.00031329699999105287,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.109700695000015,
+      "fourier_s": 0.055890099999999165,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 7,
+      "fft_points": 524288,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 9,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.1901219879999871,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "retests/004_case.json",
+      "sha256": "2b90c71cc9766641e6c41376d80dbd8b3b30eccbd558fb7874c3afbf2e771490",
+      "band": 0,
+      "label": "paired_2_native",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.5474889420000295,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.1974581990000388,
+      "first_s": 0.0006910800000241579,
+      "cold_s": 0.19814927900006296,
+      "cached_s": 0.0003320515000098112,
+      "changed_frequency_probe_s": 0.0010941250000087166,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.12746108099997855,
+      "fourier_s": 0.06989195400001336,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 7,
+      "fft_points": 524288,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 9,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.4642596710000362,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    },
+    {
+      "file": "retests/005_case.json",
+      "sha256": "6364708e64f4c6a93787cede7c0503fc1c506775238a11ba313fa28277bd73ad",
+      "band": 0,
+      "label": "paired_2_cut",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.359254233999991,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.0022001139999474617,
+      "first_s": 0.26723458199995775,
+      "cold_s": 0.2694346959999052,
+      "cached_s": 0.1964330865000079,
+      "changed_frequency_probe_s": 0.17257203599996274,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "retests/006_case.json",
+      "sha256": "6c7fe2ffb7334433bbccb75013d8ba5f4d0923b3b6a49d9cb35755a69619b93f",
+      "band": 0,
+      "label": "paired_3_cut",
+      "kind": "cut",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.0810648220000303,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 3.1315987144681004e-15,
+          "max_with_empirical_margin": 2.3969784441569824e-12,
+          "band_residual_relative_l2": 8.863236769505782e-13,
+          "relative_l2_with_empirical_margin": 1.8704845558824384e-10,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": true
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.003703118000032646,
+      "first_s": 0.20048129100001688,
+      "cold_s": 0.20418440900004953,
+      "cached_s": 0.1824245080000253,
+      "changed_frequency_probe_s": 0.16487226899999996,
+      "changed_frequency_probe_has_independent_truth": false
+    },
+    {
+      "file": "retests/007_case.json",
+      "sha256": "32daaad598b8938f86662cf41c0891a06041d6b0a8f523a26aec9b651fc06bd9",
+      "band": 0,
+      "label": "paired_3_native",
+      "kind": "glow",
+      "status": "ok",
+      "n": 801,
+      "frequencies_bitwise_equal": true,
+      "process_wall_s": 3.0588887640000166,
+      "native_stdout": "",
+      "native_stderr": "",
+      "warnings": [],
+      "passes": true,
+      "scores": {
+        "first": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        },
+        "cached": {
+          "n": 801,
+          "measure": "d(log w)",
+          "max_complex_abs": 6.144439023739216e-09,
+          "max_with_empirical_margin": 6.144467843935335e-09,
+          "band_residual_relative_l2": 4.228428001221722e-06,
+          "relative_l2_with_empirical_margin": 4.228614164140806e-06,
+          "residual_norm": 0.0009295182406632708,
+          "reference_uncertainty_norm": 1.73041097299942e-13,
+          "reference_margin_is_empirical": true,
+          "pass_1e8": true,
+          "pass_1e10": false
+        }
+      },
+      "cached_equals_first": true,
+      "prepare_s": 0.15347924200000307,
+      "first_s": 0.0003322240000329657,
+      "cold_s": 0.15381146600003603,
+      "cached_s": 0.00023666399999910936,
+      "changed_frequency_probe_s": 0.00021258199996054827,
+      "changed_frequency_probe_has_independent_truth": false,
+      "time_domain_s": 0.10486031400000684,
+      "fourier_s": 0.048562317999994775,
+      "Nt": 30000,
+      "sampling": "log",
+      "fft_above": 9,
+      "fft_below": 7,
+      "fft_points": 524288,
+      "effective_time_precision": {
+        "Nt": 30000,
+        "tmin": 1e-05,
+        "tmax": 10000000000.0,
+        "eval_mode": "interpolate",
+        "sampling": "log",
+        "interp_fill_value": null,
+        "interp_kind": "linear",
+        "oversampling_n": 10,
+        "oversampling_tmin": 0.1,
+        "oversampling_tmax": 10.0,
+        "lens_file_xmin": 1e-07,
+        "lens_file_xmax": 10000000.0,
+        "lens_file_Nx": 10000,
+        "lens_file_fname": "wrapper/glow_lib/external/tmp",
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "method": "qag31",
+        "parallel": false
+      },
+      "effective_frequency_precision": {
+        "interp_fill_value": null,
+        "interp_kind": "cubic",
+        "reg_stage": 2,
+        "C_prec": {
+          "si_qagSingInt": {
+            "n": 1000,
+            "epsabs": 1e-07,
+            "epsrel": 1e-07
+          }
+        },
+        "wmin": 0.013716814159292035,
+        "wmax": 0.5486725663716814,
+        "window_transition": 0.2,
+        "smallest_tau_max": 128.66771417605855,
+        "N_above_discard": 9,
+        "N_below_discard": 7,
+        "N_keep": 5,
+        "eval_mode": "exact",
+        "FFT method": "multigrid",
+        "parallel": false
+      },
+      "backend": {
+        "optimized_c": true,
+        "git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "extensions": {
+          "clenses": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/clenses.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "a2671dce0712394492ff64907b9ca12c395c6ed3a03b057ab2356c61d6eabaa7"
+          },
+          "csingle_integral": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/csingle_integral.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "e43d32ffa55327d9766f48713a555181a7ace152f5ce25398bdc2a150046d00c"
+          },
+          "cfourier": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/cfourier.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "dcb1dd1e646ce3f7111c244d81a5ff18cdde00e6dbc8eeea11dbc612e97b98f4"
+          },
+          "ccommon": {
+            "path": "${HOME}/nfw_glow_local/venv/lib/python3.11/site-packages/glow/wrapper/ccommon.cpython-311-x86_64-linux-gnu.so",
+            "sha256": "ab4728af0b89eae14568d1e88b61997c000a650e6c2c3dcd3960b318fef75ba6"
+          }
+        },
+        "installed_git_sha": "7cde9749283021814f5a905720884872d02420a7",
+        "build_manifest_verified": true,
+        "gsl_version": "2.8",
+        "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+        "c_compile_flags": "CFLAGS = -fPIC -fopenmp -Ofast",
+        "python": "3.11.17",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "threads_environment": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "parallel_default": false,
+        "import_wall_s": 1.1893706089999796,
+        "timing_note": "Preparation and evaluation exclude imports, subprocess/WSL startup, JSON and metadata hashing; time-domain preparation is shared between methods."
+      }
+    }
+  ],
+  "selections": [
+    {
+      "band": 0,
+      "selected_fft": "stage2/000_case.json",
+      "selected_label": "log_N30000_a9_b7",
+      "selected_cold_s": 0.1431275309999478,
+      "cut_file": "stage1/001_case.json",
+      "cut_cold_s": 0.17520170999999962,
+      "glow_over_cut_cold_ratio": 0.8169299888679631
+    },
+    {
+      "band": 1,
+      "selected_fft": "stage2/001_case.json",
+      "selected_label": "log_N120000_a10_b8",
+      "selected_cold_s": 0.6994328090000863,
+      "cut_file": "stage1/005_case.json",
+      "cut_cold_s": 0.14454934700000877,
+      "glow_over_cut_cold_ratio": 4.838713031336239
+    },
+    {
+      "band": 2,
+      "selected_fft": "stage2/002_case.json",
+      "selected_label": "log_N120000_a10_b8",
+      "selected_cold_s": 0.9655830729998911,
+      "cut_file": "stage1/009_case.json",
+      "cut_cold_s": 0.17735350200000255,
+      "glow_over_cut_cold_ratio": 5.444398120764919
+    },
+    {
+      "band": 3,
+      "selected_fft": "stage2/003_case.json",
+      "selected_label": "log_N120000_a10_b8",
+      "selected_cold_s": 0.7406253189999461,
+      "cut_file": "stage1/013_case.json",
+      "cut_cold_s": 0.15625358799999844,
+      "glow_over_cut_cold_ratio": 4.739893198484207
+    },
+    {
+      "band": 4,
+      "selected_fft": "stage2/004_case.json",
+      "selected_label": "log_N120000_a10_b8",
+      "selected_cold_s": 1.2931655190000697,
+      "cut_file": "stage1/017_case.json",
+      "cut_cold_s": 0.13671773300001178,
+      "glow_over_cut_cold_ratio": 9.458652441230564
+    },
+    {
+      "band": 5,
+      "selected_fft": null,
+      "selected_label": null,
+      "selected_cold_s": null,
+      "cut_file": "stage1/021_case.json",
+      "cut_cold_s": 0.13058633999997937,
+      "glow_over_cut_cold_ratio": null
+    }
+  ]
+}

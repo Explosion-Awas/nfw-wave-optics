@@ -1,0 +1,26 @@
+name: Numerical tests and paper replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -r requirements-replay.txt
+      - run: python -m pip install . --no-deps
+      - run: python -B -m pytest -q -W error
+      - run: python -B examples/replay_paper.py
+      - name: Exercise installed evaluator outside source directory
+        working-directory: ${{ runner.temp }}
+        run: |
+          python -B -c "import numpy as np; from nfw_frozen_cut.controlled_cut import ControlledCutNFW; r=ControlledCutNFW(27.7,.183).evaluate(np.linspace(.47,5.3,17)/27.7,atol=1e-8,band_rtol=.01); assert r.converged; print(r.route, r.band_relative_indicator)"
